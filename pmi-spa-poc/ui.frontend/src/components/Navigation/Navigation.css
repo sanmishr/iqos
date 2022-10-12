@@ -1,0 +1,27 @@
+.navigation {
+  height: 80px;
+  min-width: 80px;
+  display: flex;
+  border-bottom: .0625rem solid rgba(52,48,61,.15);
+}
+.navigation ul li {
+  display: inline-block; padding: 10px;
+  cursor: pointer;
+}
+.navigation ul li a {
+  text-decoration: none;
+  color: #34303d;
+  font-size: 14px;
+}
+.navigation .left {
+  width: 50%;
+  display: flex;
+}
+.navigation .right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.navigation .subname {
+  font-size: 12px;
+}

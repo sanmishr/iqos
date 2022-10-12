@@ -1,0 +1,22 @@
+.submenu {
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+.submenu .left {
+  width: 50%;
+  display: flex;
+}
+.submenu .right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.submenu li {
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+.submenu .subname {
+  font-size: 12px;
+}
