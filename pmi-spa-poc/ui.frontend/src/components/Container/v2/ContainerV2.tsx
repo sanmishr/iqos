@@ -58,7 +58,7 @@ class ContainerV2Impl extends AllowedComponentsContainer<ContainerV2Properties, 
     }
 
     init() {
-        console.log('PROPS ContainerV2', this.props);
+        // console.log('PROPS ContainerV2', this.props);
         if (this.mainDiv.current) {
             this.mainDiv.current.className = '';
             this.mainDiv.current.setAttribute('style', this.props.backgroundStyle);

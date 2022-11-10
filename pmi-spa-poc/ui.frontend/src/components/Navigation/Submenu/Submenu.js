@@ -6,39 +6,54 @@ class Submenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      displaySubMenu: false
+      fieldLabels: []
     };
   }
 
- componentDidMount() {
-    /*
-    if(this.props.items.length > 0) {
-      this.submenu = this.props.items.map(item) => (
-        <li>
-          <div>{item.name}</div>
-        </li>
-      );
-    }
-    */
-    console.log('SUB', this.submenu);
+  openSubMenu = (fieldLabel) => {
+    this.setState(() => ({
+      fieldLabels: fieldLabel,
+    }));
+
   }
 
   render() {
-    console.log('THIS props?', this.props.items);
     return (
         <div className="submenu" >
-          <div class="left">
-            <ul>
-              {this.props.items.map(({ id, name, subName }) => (
-                <li>
-                  <div>{name}</div>
-                  <div className="subname">{subName}</div>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div class="right">
-            image
+          <div className="content">
+            <div class="left">
+              <ul>
+                {this.props.items.map(({boldtext, boldText, shorttext, fieldLabel }) => (
+                  <li onClick={(e) => this.openSubMenu(fieldLabel, e)}>
+                    { fieldLabel && <div className="arrowRight"><img src="/etc.clientlibs/pmi-spa-poc/clientlibs/clientlib-react/resources/arrowRight.svg" alt="logo"></img></div>}
+                    { boldtext && <div className="bold-text">{boldtext}</div>}
+                    { boldText && <div className="bold-text">{boldText}</div>}
+                    <span className={boldtext || boldText ? '' : 'shortLink'} >{shorttext}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="center">
+              { this.state.fieldLabels &&
+                <ul>
+                  {this.state.fieldLabels.map(({boldtext, plaintext, teaserImagePath }) => (
+                    <li>
+                      { teaserImagePath && <div className="small-image"><img src={ teaserImagePath._authorUrl } alt="iqos"></img></div>}
+                      { boldtext && <div className="bold-text no-background">{boldtext}</div>}
+                      <span>{plaintext}</span>
+                    </li>
+                  ))}
+                </ul> }
+            </div>
+            <div class="right">
+              <div>
+                { this.props.teaser && <img src={ this.props.teaser.teaserImagePath._authorUrl } width="300px" alt="teaser" />}
+              </div>
+              <div>
+                <h2>{this.props.teaser && this.props.teaser.boldtext}</h2>
+              </div>
+              <p>{this.props.teaser && this.props.teaser.plaintext}</p>
+            </div>
           </div>
         </div>
     );

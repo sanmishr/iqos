@@ -31,6 +31,18 @@
   outline: 1px #33303c solid;
 }
 
+
+.btn-white-turquoise {
+  background-color: #fff;
+  color: #33303c;
+  outline: 1px #33303c solid;
+}
+.btn-white-turquoise:hover {
+  background-color: #5eced0;
+  color: #33303c;
+}
+
+
 .btn.ms-1 { margin-left: 1px; }
 .btn.ms-2 { margin-left: 2px; }
 .btn.ms-3 { margin-left: 3px; }

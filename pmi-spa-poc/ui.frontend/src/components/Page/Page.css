@@ -1,6 +1,27 @@
-.container .aem-container.aem-Grid.aem-Grid--12.aem-Grid--default--12 {
+.page {
   max-width: 1024px;
   margin: 0 auto;
+}
+
+.full-width {
+  width: 100vw !important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+}
+
+.regular-width {
+  max-width: 1024px !important;
+  float: none !important;
+  margin: 0 auto;
+}
+
+.background-right-only > .container .aem-container {
+  background: linear-gradient(90deg, #fff 50%, rgba(255,255,255,0) 0%);
+}
+.aem-GridColumn:not(.background-right-only) > .container .aem-container{
+  background-image: none;
 }
 
 .container .cmp-container {

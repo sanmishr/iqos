@@ -2,21 +2,106 @@
   background-color: #fff;
   width: 100%;
   position: absolute;
+  z-index: 1;
+  left: 0px;
+  right: 0px;
   display: flex;
+  justify-content: center
+}
+.submenu .content {
+  display: flex;
+  min-width: 1024px;
+}
+.submenu ul {
+  list-style-type: none;
 }
 .submenu .left {
-  width: 50%;
+  width: 30%;
   display: flex;
+}
+.submenu .center {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start
 }
 .submenu .right {
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
 }
 .submenu li {
+  padding-top: 20px;
   padding-bottom: 10px;
   font-size: 22px;
+  color: #34303d;
+  position: relative;
 }
-.submenu .subname {
-  font-size: 12px;
+.submenu li .bold-text {
+  background-image: linear-gradient(transparent calc(100% - 4px),#00d1d2 0.25rem);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size .5s;
+  font-size: 1.75rem;
+  display: inline-block;
+  cursor: pointer;
+}
+.submenu li .bold-text:hover {
+  background-size: 100% 100%;
+  opacity: 1!important;
+}
+.submenu li span {
+  display: block;
+  font-size: 16px;
+  padding-top: 0.625rem;
+}
+.submenu .shortLink {
+  display: inline-block;
+  background-image: linear-gradient(transparent calc(100% - 4px),#00d1d2 0.25rem);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size .5s;
+  cursor: pointer;
+}
+
+.submenu .shortLink:hover {
+  background-image: linear-gradient(transparent calc(100% - 4px),#00d1d2 0.25rem);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.submenu .arrowRight {
+  position: absolute;
+  right: -35px;
+  top: 35px;
+  width: 25px;
+  height: 25px;
+}
+
+.submenu .small-image {
+  position: absolute;
+  right: 60px;
+  top: 15px;
+  width: 72px;
+  height: 72px;
+}
+.submenu .small-image img {
+  width: 72px;
+  height: 72px;
+}
+
+.submenu .center ul:hover li{
+  opacity: 0.5;
+}
+
+.submenu .center ul li{
+  transition: opacity 0.3s ease-in-out;
+}
+
+.submenu .center ul li:hover{
+  opacity: 1;
+}
+.submenu .bold-text.no-background {
+  background-image: none;
 }

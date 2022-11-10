@@ -16,14 +16,20 @@
 
 /* Global styles */
 
+@font-face{
+  font-family: IQOSW04-Regular;
+  src: local("/etc.clientlibs/pmi-spa-poc/clientlibs/clientlib-react/resources/IQOSW04-Regular.woff2") format("woff2"),
+  local("/etc.clientlibs/pmi-spa-poc/clientlibs/clientlib-react/resources/IQOSW04-Regular.woff") format("woff")
+}
+
 html,
 body {
   border: 0;
-  font: inherit;
   font-size: 100%;
   margin: 0;
   padding: 0;
   vertical-align: baseline;
+  font-family: IQOSW04-Regular;
 }
 
 body {
