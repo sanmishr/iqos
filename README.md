@@ -31,6 +31,8 @@ This approach provides a posibility to drag and drop container size and alignmen
   - inline left (all 3 inline styles are converting child block elements to inline elements so they can be horizontally aligned)
   - inline right
   - inline center
+  - Full width
+  - Regular width (For container which are put inside Full width container)
 
 
 
@@ -76,3 +78,16 @@ Created 2 additional custom react components for **button** and **separator**.
     - all standart button/link atributes.
     - style variations which is addign coresponding css class name to button element.
     - posibility to add margins to all 4 sides: margin-top, margin-bottom, margin-left, margin-right
+    
+  - **Navigation**
+    - Contains sub components: MainMenu and Submenu
+    - Data is fetched via GraphQL.
+      Query: [pmi-spa-poc/resources/Navigation_query.txt](pmi-spa-poc/resources/Navigation_query.txt) should be saved in AEM GraphQL Explorer with name 'Navigation' 
+      Content: [pmi-spa-poc/resources/Navigation_content.zip](pmi-spa-poc/resources/Navigation_content.zip)
+
+
+### Data
+
+Data provided as a props directly to React components.
+
+Data for main navigation is provided via GraphQL
