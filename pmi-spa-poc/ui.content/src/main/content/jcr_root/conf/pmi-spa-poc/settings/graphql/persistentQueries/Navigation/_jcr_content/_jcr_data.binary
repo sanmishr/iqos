@@ -1,0 +1,180 @@
+{
+  mainNavigationByPath(_path: "/content/dam/navigation_cf/main-navigation-menu") {
+    item {
+      mainavigationsleft {
+        ... on NavigationCfModel {
+          pageswithoutsubnav {
+            ... on TextandlinkModel {
+              boldtext
+              shorttext
+              _metadata {
+                stringMetadata {
+                  name
+                  value
+                }
+              }
+            }
+          }
+          _metadata {
+            stringMetadata {
+              name
+              value
+            }
+          }
+        }
+      }
+      mainnavigationright {
+        ... on NavigationCfModel {
+          pageswithoutsubnav {
+            ... on TextandlinkModel {
+              boldtext
+              shorttext
+              _metadata {
+                stringMetadata {
+                  name
+                  value
+                }
+              }
+            }
+          }
+          navigationmenu {
+            ... on TextandlinkModel {
+              boldtext
+              shorttext
+              _metadata {
+                stringMetadata {
+                  name
+                  value
+                }
+              }
+            }
+            ... on NavigationLevel1Model {
+              boldText
+              shorttext
+              fieldLabel {
+                _path
+                _variation
+                teaserImagePath {
+                  ... on ImageRef {
+                    type
+                    _path
+                    _authorUrl
+                    _publishUrl
+                    width
+                    height
+                    mimeType
+                  }
+                }
+                boldtext
+                plaintext
+                _metadata {
+                  stringMetadata {
+                    name
+                    value
+                  }
+                }
+              }
+              _metadata {
+                stringMetadata {
+                  name
+                  value
+                }
+              }
+            }
+            ... on NavigationLevel1TeaserModel {
+              boldText
+              shorttext
+              fieldLabel {
+                ... on NavigationLevel2Model {
+                  _path
+                  _variation
+                  teaserImagePath {
+                    ... on ImageRef {
+                      type
+                      _path
+                      _authorUrl
+                      _publishUrl
+                      width
+                      height
+                      mimeType
+                    }
+                  }
+                  boldtext
+                  plaintext
+                  _metadata {
+                    stringMetadata {
+                      name
+                      value
+                    }
+                  }
+                }
+              }
+              teaser {
+                ... on NavigationLevel2Model {
+                  _path
+                  _variation
+                  teaserImagePath {
+                    ... on ImageRef {
+                      type
+                      _path
+                      _authorUrl
+                      _publishUrl
+                      width
+                      height
+                      mimeType
+                    }
+                  }
+                  boldtext
+                  plaintext
+                  _metadata {
+                    stringMetadata {
+                      name
+                      value
+                    }
+                  }
+                }
+              }
+              _metadata {
+                stringMetadata {
+                  name
+                  value
+                }
+              }
+            }
+          }
+          teaser {
+            ... on NavigationLevel2Model {
+              _path
+              _variation
+              teaserImagePath {
+                ... on ImageRef {
+                  type
+                  _path
+                  _authorUrl
+                  _publishUrl
+                  width
+                  height
+                  mimeType
+                }
+              }
+              boldtext
+              plaintext
+              _metadata {
+                stringMetadata {
+                  name
+                  value
+                }
+              }
+            }
+          }
+          _metadata {
+            stringMetadata {
+              name
+              value
+            }
+          }
+        }
+      }
+    }
+  }
+}

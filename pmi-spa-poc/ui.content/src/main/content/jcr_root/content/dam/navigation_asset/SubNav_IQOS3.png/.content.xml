@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="4c62c2cc-e68a-495e-9d29-0155764e82b1">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2022-10-24T10:56:27.245+03:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}32"
+            dam:Comments="Software: Adobe ImageReady&#xa;"
+            dam:extracted="{Date}2022-10-24T10:56:26.621+03:00"
+            dam:Fileformat="PNG"
+            dam:MIMEtype="image/png"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}1"
+            dam:Physicalheightindpi="{Long}-1"
+            dam:Physicalheightininches="{Decimal}-1.0"
+            dam:Physicalwidthindpi="{Long}-1"
+            dam:Physicalwidthininches="{Decimal}-1.0"
+            dam:Progressive="no"
+            dam:scene7APIServer="https://s7sps3apissl.scene7.com"
+            dam:scene7CloudConfigPath="/conf/global/settings/cloudconfigs/dmscene7"
+            dam:scene7CompanyID="c|29969"
+            dam:scene7Domain="https://media.iqos.com/"
+            dam:scene7File="pmintlpp/SubNav_IQOS3"
+            dam:scene7FileStatus="PublishComplete"
+            dam:scene7Folder="pmintlpp/iqos/global/marketing/content/always-on/subnav-icons/"
+            dam:scene7ID="a|585122026"
+            dam:scene7LastModified="{Long}1624360067961"
+            dam:scene7Name="SubNav_IQOS3"
+            dam:scene7Type="Image"
+            dam:scene7UploadTimeStamp="{Date}2021-06-22T11:07:47.961Z"
+            dam:sha1="38afcf4ab2477f77f111f422c478bab19d253efc"
+            dam:size="{Long}20525"
+            dc:format="image/png"
+            dc:modified="{Date}2019-10-09T12:20:19.246Z"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}144"
+            tiff:ImageWidth="{Long}182"
+            xmp:CreatorTool="Adobe Photoshop CC 2019 (Macintosh)"
+            xmpMM:DocumentID="xmp.did:367759A091D311E9931AB260CF8442C7"
+            xmpMM:InstanceID="xmp.iid:3677599F91D311E9931AB260CF8442C7">
+            <xmpMM:DerivedFrom
+                jcr:primaryType="nt:unstructured"
+                stRef:documentID="xmp.did:3677599E91D311E9931AB260CF8442C7"
+                stRef:instanceID="xmp.iid:A086013C91CE11E9931AB260CF8442C7"
+                xmpNodeType="xmpStruct"/>
+        </metadata>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

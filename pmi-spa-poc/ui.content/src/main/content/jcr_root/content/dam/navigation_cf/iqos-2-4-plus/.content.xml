@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="bc9c08f0-ba86-4d01-b0a6-75df66b51c85">
+    <jcr:content
+        cq:name="iqos-2-4-plus"
+        cq:parentPath="/content/dam/navigation_cf"
+        jcr:lastModified="{Date}2022-10-31T13:20:30.349+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="IQOS 2.4 Plus"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2022-10-31T13:20:30.349+02:00">
+        <data
+            cq:model="/conf/pmi-spa-poc/settings/dam/cfm/models/navigation_level2"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                boldtext="IQOS 2.4 Plus"
+                boldtext_x0040_LastModified="{Date}2022-10-20T16:44:58.685+02:00"
+                plaintext="Troubleshooting IQOS 2.4 Plus."
+                plaintext_x0040_LastModified="{Date}2022-10-31T13:20:30.273+02:00"
+                teaserImagePath="/content/dam/navigation_asset/SubNav_IQOS2.4PLUS.png"
+                teaserImagePath_x0040_LastModified="{Date}2022-10-20T16:44:58.685+02:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

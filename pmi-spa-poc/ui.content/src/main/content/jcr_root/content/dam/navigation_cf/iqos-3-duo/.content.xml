@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="a36ae144-b159-43fb-944e-a20741a666bf">
+    <jcr:content
+        cq:name="iqos-3-duo"
+        cq:parentPath="/content/dam/navigation_cf"
+        jcr:description="Troubleshooting IQOS 3 DUO"
+        jcr:lastModified="{Date}2022-10-20T16:38:59.931+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="IQOS 3 DUO"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2022-10-20T16:38:59.931+02:00">
+        <data
+            cq:model="/conf/pmi-spa-poc/settings/dam/cfm/models/navigation_level2"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                boldtext="IQOS 3 DUO"
+                boldtext_x0040_LastModified="{Date}2022-10-20T16:38:59.919+02:00"
+                plaintext="Troubleshooting IQOS 3 DUO"
+                plaintext_x0040_LastModified="{Date}2022-10-20T16:38:59.919+02:00"
+                teaserImagePath="/content/dam/navigation_asset/SubNav_IQOS3.png"
+                teaserImagePath_x0040_LastModified="{Date}2022-10-20T16:38:59.919+02:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>
