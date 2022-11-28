@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="592d5f15-a214-4ebd-9839-ee7bc9a10d46">
+    <jcr:content
+        cq:lastModified="{Date}2022-10-21T11:07:14.378+02:00"
+        cq:lastModifiedBy="admin"
+        cq:name="what-is heated-tobacco"
+        cq:parentPath="/content/dam/navigation_cf"
+        jcr:lastModified="{Date}2022-10-21T11:10:21.983+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="What is Heated Tobacco? "
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2022-10-21T11:10:21.983+02:00">
+        <data
+            cq:model="/conf/pmi-spa-poc/settings/dam/cfm/models/textandlink"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                boldtext="What is heated tobacco? "
+                boldtext_x0040_LastModified="{Date}2022-10-21T11:07:48.936+02:00"
+                linktopage_x0040_LastModified="{Date}2022-10-21T11:05:55.713+02:00"
+                shorttext="Benefits, Functionality and Technology"
+                shorttext_x0040_LastModified="{Date}2022-10-21T11:07:48.936+02:00"/>
+        </data>
+        <metadata
+            dc:title="What is heated Tobacco?"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

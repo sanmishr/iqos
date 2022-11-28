@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="sling:Folder">
+    <jcr:content
+        cq:conf=""
+        dam:noThumbnail="{Boolean}true"
+        jcr:lastModified="{Date}2022-10-21T10:45:31.794+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="navigation_cf"
+        metadataSchema="System Default"
+        processingProfile="System Default"
+        sourcing="false">
+        <policies jcr:primaryType="nt:unstructured">
+            <cfm
+                jcr:primaryType="nt:unstructured"
+                policy-cfm-allowedModelsByPaths="[/conf/pmi-spa-poc/settings/dam/cfm/models/navigation_cf,/conf/pmi-spa-poc/settings/dam/cfm/models/navigation_level1,/conf/pmi-spa-poc/settings/dam/cfm/models/navigation_level2,/conf/pmi-spa-poc/settings/dam/cfm/models/navigation_level11,/conf/pmi-spa-poc/settings/dam/cfm/models/main-navigation,/conf/pmi-spa-poc/settings/dam/cfm/models/textandlink]"/>
+        </policies>
+    </jcr:content>
+</jcr:root>

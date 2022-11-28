@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="907e3028-a00a-4d7c-8e70-890ecdfed630">
+    <jcr:content
+        cq:name="about-iqos"
+        cq:parentPath="/content/dam/navigation_cf"
+        cq:versionCreator="admin"
+        jcr:lastModified="{Date}2022-10-21T11:43:27.567+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="About IQOS "
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2022-10-21T11:43:27.567+02:00">
+        <data
+            cq:model="/conf/pmi-spa-poc/settings/dam/cfm/models/navigation_cf"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                boldText="[What is IQOS? ,What is heated tobacco? ]"
+                boldText_x0040_LastModified="{Date}2022-10-21T10:26:17.552+02:00"
+                navigationmenu_x0040_LastModified="{Date}2022-10-21T10:24:24.638+02:00"
+                pageswithoutsubnav="[/content/dam/navigation_cf/what-is-iqos-,/content/dam/navigation_cf/what-is heated-tobacco]"
+                pageswithoutsubnav_x0040_LastModified="{Date}2022-10-21T11:43:27.555+02:00"
+                shorttext="[Discover the world of IQOS,Benefits\, Functionality and Technology What are HEETS? Discover our tobacco sticks Research and innovation Discover the science behind IQOS  News Shop IQOS 3 DUO Our best alternative For all who want to try first. Try IQOS now at h]"
+                shorttext_x0040_LastModified="{Date}2022-10-21T10:26:17.553+02:00"
+                teaser_x0040_LastModified="{Date}2022-10-21T10:24:24.638+02:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

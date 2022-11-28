@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:exif="http://ns.adobe.com/exif/1.0/" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="9ec3d2f3-2bbc-489f-8c68-1c943850df4d">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2022-11-10T13:37:19.936+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}24"
+            dam:extracted="{Date}2022-11-10T13:37:16.852+02:00"
+            dam:Fileformat="JPEG"
+            dam:MIMEtype="image/jpeg"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}0"
+            dam:Physicalheightindpi="{Long}-1"
+            dam:Physicalheightininches="{Decimal}-1.0"
+            dam:Physicalwidthindpi="{Long}-1"
+            dam:Physicalwidthininches="{Decimal}-1.0"
+            dam:Progressive="no"
+            dam:scene7APIServer="https://s7sps3apissl.scene7.com"
+            dam:scene7CloudConfigPath="/conf/global/settings/cloudconfigs/dmscene7"
+            dam:scene7CompanyID="c|29969"
+            dam:scene7Domain="https://media.iqos.com/"
+            dam:scene7File="pmintlpp/discover-iqos-hero-720x720@2x"
+            dam:scene7FileStatus="UploadStart"
+            dam:scene7Folder="pmintlpp/iqos/local/germany/"
+            dam:scene7ID="a|775569176"
+            dam:scene7LastModified="{Long}1665413343611"
+            dam:scene7Name="discover-iqos-hero-720x720@2x"
+            dam:scene7Type="Image"
+            dam:scene7UploadTimeStamp="{Date}2022-10-10T14:49:03.611Z"
+            dam:sha1="7dc6e92ac175dd505358fd6f974870c9ef277057"
+            dam:size="{Long}207079"
+            dc:format="image/jpeg"
+            dc:modified="{Date}2022-10-31T12:58:51.613Z"
+            exif:ColorSpace="{Long}1"
+            exif:PixelXDimension="{Long}1440"
+            exif:PixelYDimension="{Long}1440"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}1440"
+            tiff:ImageWidth="{Long}1440"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

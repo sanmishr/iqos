@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="a845ea24-cb35-454a-859b-b1e241684ccc">
+    <jcr:content
+        cq:name="what-is-iqos-"
+        cq:parentPath="/content/dam/navigation_cf"
+        jcr:lastModified="{Date}2022-10-21T11:06:56.589+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="What is IQOS? "
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2022-10-21T11:06:56.589+02:00">
+        <data
+            cq:model="/conf/pmi-spa-poc/settings/dam/cfm/models/textandlink"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                boldtext="What is IQOS?  "
+                boldtext_x0040_LastModified="{Date}2022-10-21T11:06:56.574+02:00"
+                linktopage_x0040_LastModified="{Date}2022-10-21T11:05:55.713+02:00"
+                shorttext="Discover the world of IQOS"
+                shorttext_x0040_LastModified="{Date}2022-10-21T11:06:56.574+02:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

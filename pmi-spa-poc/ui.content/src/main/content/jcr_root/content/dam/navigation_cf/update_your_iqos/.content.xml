@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="3812b1f4-80a7-412a-8dea-333813101f33">
+    <jcr:content
+        cq:lastModified="{Date}2022-10-20T18:42:09.751+02:00"
+        cq:lastModifiedBy="admin"
+        cq:name="update_your_iqos"
+        cq:parentPath="/content/dam/navigation_cf"
+        jcr:lastModified="{Date}2022-10-20T18:45:52.855+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Update Your IQOS"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2022-10-20T18:45:52.855+02:00">
+        <data
+            cq:model="/conf/pmi-spa-poc/settings/dam/cfm/models/navigation_level2"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                boldtext="Update your IQOS"
+                boldtext_x0040_LastModified="{Date}2022-10-20T18:32:04.360+02:00"
+                plaintext="Discover the IQOS App"
+                plaintext_x0040_LastModified="{Date}2022-10-20T18:32:04.360+02:00"
+                teaserImagePath="/content/dam/navigation_asset/840x480-navigation-myIQOS-firmware-EN.jpg"
+                teaserImagePath_x0040_LastModified="{Date}2022-10-20T18:45:52.843+02:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>
