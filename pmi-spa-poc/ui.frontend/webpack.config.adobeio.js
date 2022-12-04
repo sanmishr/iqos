@@ -53,7 +53,7 @@ const serverConfig = {
     devtool: 'source-map',
 
     resolve: {
-        extensions: ['.js', 'jsx'],
+        extensions: ['.js', '.jsx','.tsx', '.ts'],
         // This allows you to set a fallback for where Webpack should look for modules.
         // We placed these paths second because we want `node_modules` to "win"
         // if there are any conflicts. This matches Node resolution mechanism.
@@ -96,6 +96,20 @@ const serverConfig = {
                         loader: "css-loader" // translates CSS into CommonJS
                     }
                 ]
+            },
+            {
+                test: /\.tsx?$/,
+                use: [
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                            compilerOptions: {
+                                "noEmit": false
+                            }
+                        }
+                    }
+                ],
+                exclude: /node_modules/
             }
         ]
     },
