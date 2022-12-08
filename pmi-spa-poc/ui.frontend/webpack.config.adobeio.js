@@ -18,7 +18,7 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 const webpack = require('webpack');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const WebpackShellPlugin = require('webpack-shell-plugin');
 var isTestEnvironment = process.env.NODE_ENV == 'test';
 
@@ -64,14 +64,15 @@ const serverConfig = {
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
+                test: /\.(j|t)sx?$/,
                 enforce: 'post',
                 loader: require.resolve('babel-loader'),
                 options: {
                     babelrc: false,
                     presets: [
                         ['@babel/preset-env'],
-                        ['@babel/react']
+                        ['@babel/react'],
+                        ['@babel/preset-typescript']
                     ],
                     plugins: [
                         ['universal-import']
@@ -96,20 +97,6 @@ const serverConfig = {
                         loader: "css-loader" // translates CSS into CommonJS
                     }
                 ]
-            },
-            {
-                test: /\.tsx?$/,
-                use: [
-                    {
-                        loader: 'ts-loader',
-                        options: {
-                            compilerOptions: {
-                                "noEmit": false
-                            }
-                        }
-                    }
-                ],
-                exclude: /node_modules/
             }
         ]
     },
@@ -120,7 +107,7 @@ const serverConfig = {
             "API_HOST": process.env.API_HOST,
             "APP_ROOT_PATH": process.env.APP_ROOT_PATH
         }),
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(),
         new WebpackShellPlugin({onBuildEnd:['node ./scripts/postWebhook.js']}),
         // Output a single chunk at most to make sure all code is loaded on
         // the server side.
