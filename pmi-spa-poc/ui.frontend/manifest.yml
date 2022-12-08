@@ -7,7 +7,7 @@ packages:
         include:
           - ["actions/common/app.js", "./common/app"]
         web: 'yes'
-        runtime: 'nodejs:10'
+        runtime: 'nodejs:16'
         inputs:
           LOG_LEVEL: debug
         annotations:
