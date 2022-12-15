@@ -53,7 +53,7 @@ class Navigation extends Component {
   }
 
   fetchData = () => {
-    return fetch('http://localhost:4502/graphql/execute.json/pmi-spa-poc/Navigation', {
+    return fetch('/graphql/execute.json/pmi-spa-poc/Navigation', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
