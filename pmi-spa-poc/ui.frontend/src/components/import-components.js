@@ -48,19 +48,22 @@ import {
     DownloadV1,DownloadV1IsEmptyFn,
     ListV2,ListV2IsEmptyFn
 } from '@adobe/aem-core-components-react-base';
+import {ButtonEditConfig} from "./Button/Button";
+import {LoginEditConfig} from "./Login/Login";
 
 //lazyload / code splitting example of an internal component
 const LazyTextComponent = withAsyncImport(() => import(`./Text/Text`));
 const LazyButtonComponent = withAsyncImport(() => import(`./Button/Button`));
 const LazySeparatorComponent = withAsyncImport(() => import(`./Separator/Separator`));
 const LazyNavigationComponent = withAsyncImport(() => import(`./Navigation/Navigation`));
+const LazyLoginComponent = withAsyncImport(() => import(`./Login/Login`));
 
 
 //lazyload / code splitting examples of external components
 const TitleV2 = withAsyncImport(() => import(`@adobe/aem-core-components-react-base/dist/authoring/title/v2/TitleV2`));
 const CarouselV1 = withAsyncImport(() => import(`@adobe/aem-core-components-react-spa/dist/container/carousel/v1/CarouselV1`));
 
-
+MapTo('pmi/components/button')(LazyButtonComponent, ButtonEditConfig);
 MapTo('pmi-spa-poc/components/download')(DownloadV1, {isEmpty: DownloadV1IsEmptyFn});
 MapTo('pmi-spa-poc/components/list')(ListV2, {isEmpty: ListV2IsEmptyFn});
 MapTo('pmi-spa-poc/components/teaser')(TeaserV1, {isEmpty: TeaserV1IsEmptyFn});
@@ -74,6 +77,7 @@ MapTo('pmi-spa-poc/components/accordion')(AccordionV1, {isEmpty: AccordionV1IsEm
 MapTo('pmi-spa-poc/components/carousel')(CarouselV1, {isEmpty: CarouselV1IsEmptyFn});
 MapTo('pmi-spa-poc/components/container')(ContainerV1, {isEmpty: ContainerV1IsEmptyFn});
 MapTo('pmi-spa-poc/components/flex-container')(ContainerV2, {isEmpty: ContainerV2IsEmptyFn});
+MapTo('pmi/components/login')(LazyLoginComponent, LoginEditConfig);
 
 //lazy load of internal component (hello world)
 

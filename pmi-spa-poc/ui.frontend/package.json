@@ -36,7 +36,8 @@
     "react-router-dom": "^5.1.2",
     "react-universal-component": "^4.5.0",
     "regenerator-runtime": "^0.13.11",
-    "sanitize-html": "^2.7.3"
+    "sanitize-html": "^2.7.3",
+    "sass": "^1.56.2"
   },
   "devDependencies": {
     "@adobe/aio-cli": "^9.1.1",

@@ -148,3 +148,7 @@
     display: none;
   }
 }
+
+.logo > img {
+  max-height: 25px;
+}
