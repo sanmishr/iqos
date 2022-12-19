@@ -6,8 +6,8 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="Reset Password"
         sling:resourceType="pmi-spa-poc/components/page"
-        pageTitle="Reset Password"
-        hideInNav="{Boolean}true">
+        hideInNav="{Boolean}true"
+        pageTitle="Reset Password">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="pmi-spa-poc/components/container">

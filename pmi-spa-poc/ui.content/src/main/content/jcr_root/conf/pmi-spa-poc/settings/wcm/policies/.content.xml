@@ -73,6 +73,20 @@
                             jcr:primaryType="nt:unstructured"
                             features="-"/>
                     </plugins>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Image styles"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="pop-out-bottom"
+                                    cq:styleLabel="Pop out bottom"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1 jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
                 </policy_651483963895698>
             </image>
             <text jcr:primaryType="nt:unstructured">
@@ -164,8 +178,6 @@
                     </rtePlugins>
                 </policy_641562756958017>
                 <policy_277139082783200
-                    jcr:lastModified="{Date}2022-05-19T19:30:07.103+05:30"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Text Policies"
                     sling:resourceType="wcm/core/components/policy/policy">
@@ -424,8 +436,6 @@
                     </cq:authoring>
                 </policy_1575040440977>
                 <policy_2618503654100
-                    jcr:lastModified="{Date}2022-05-19T18:33:59.000+05:30"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Container Policies"
                     sling:resourceType="wcm/core/components/policy/policy"
@@ -436,7 +446,8 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:styleGroups jcr:primaryType="nt:unstructured">
                         <item0
-                            cq:styleGroupLabel="Border"
+                            cq:styleGroupLabel="Container Styles"
+                            cq:styleGroupMultiple="true"
                             jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
@@ -444,25 +455,49 @@
                                     cq:styleId="1652965414387"
                                     cq:styleLabel="Border"
                                     jcr:primaryType="nt:unstructured"/>
-								<item1
+                                <item1
                                     cq:styleClasses="inline-left"
-                                    cq:styleId="1652965414388"
+                                    cq:styleId="1653381480137"
                                     cq:styleLabel="Inline Left"
                                     jcr:primaryType="nt:unstructured"/>
-								<item2
+                                <item2
                                     cq:styleClasses="inline-center"
-                                    cq:styleId="1652965414389"
+                                    cq:styleId="1653381492786"
                                     cq:styleLabel="Inline Center"
                                     jcr:primaryType="nt:unstructured"/>
-								<item3
+                                <item3
                                     cq:styleClasses="inline-right"
-                                    cq:styleId="1652965414386"
+                                    cq:styleId="1653381495087"
                                     cq:styleLabel="Inline Right"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
+                                    cq:styleClasses="full-width"
+                                    cq:styleId="1667809464819"
+                                    cq:styleLabel="Full Width"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item5
+                                    cq:styleClasses="regular-width"
+                                    cq:styleId="1667811277249"
+                                    cq:styleLabel="Regular Width"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item6
+                                    cq:styleClasses="background-right-only"
+                                    cq:styleId="1668066019952"
+                                    cq:styleLabel="Background right only"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
                     </cq:styleGroups>
                 </policy_2618503654100>
+                <policy_362724361012500
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="container colors"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    backgroundColorEnabled="true"
+                    backgroundImageEnabled="true"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_362724361012500>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -515,6 +550,17 @@
                     isRoot="{Boolean}true"
                     structureDepth="3"/>
             </spa>
+            <flex-container jcr:primaryType="nt:unstructured">
+                <policy_1667285336876
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Flex container"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    backgroundColorEnabled="true"
+                    backgroundImageEnabled="true"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1667285336876>
+            </flex-container>
         </components>
     </pmi-spa-poc>
     <wcm jcr:primaryType="nt:unstructured">
@@ -523,12 +569,10 @@
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <spa-default
                         jcr:description="Includes only SPA-Enabled components."
-                        jcr:lastModified="{Date}2022-05-18T17:31:28.862+05:30"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="SPA Content"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/libs/wcm/foundation/components/responsivegrid,/apps/pmi-spa-poc/components/carousel,/apps/pmi-spa-poc/components/container,/apps/pmi-spa-poc/components/separator,/apps/pmi-spa-poc/components/text]">
+                        components="[/libs/wcm/foundation/components/responsivegrid,/apps/pmi-spa-poc/components/button,/apps/pmi-spa-poc/components/carousel,/apps/pmi-spa-poc/components/container,/apps/pmi-spa-poc/components/flex-container,/apps/pmi-spa-poc/components/image,/apps/pmi-spa-poc/components/separator,/apps/pmi-spa-poc/components/text,/apps/pmi-spa-poc/components/title]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </spa-default>
                 </responsivegrid>

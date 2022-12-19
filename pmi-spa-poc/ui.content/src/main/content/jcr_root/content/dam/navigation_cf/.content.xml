@@ -5,8 +5,6 @@
     <jcr:content
         cq:conf=""
         dam:noThumbnail="{Boolean}true"
-        jcr:lastModified="{Date}2022-10-21T10:45:31.794+02:00"
-        jcr:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         jcr:title="navigation_cf"
         metadataSchema="System Default"

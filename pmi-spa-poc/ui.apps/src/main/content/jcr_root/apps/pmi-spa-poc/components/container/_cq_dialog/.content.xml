@@ -129,7 +129,7 @@
                                                 name="./paddingLeft"
                                                 type="editable">
                                                 <items jcr:primaryType="nt:unstructured">
-													<none
+                                                    <none
                                                         jcr:primaryType="nt:unstructured"
                                                         text="None"
                                                         value="none"/>
@@ -155,7 +155,7 @@
                                                 name="./paddingRight"
                                                 type="editable">
                                                 <items jcr:primaryType="nt:unstructured">
-													<none
+                                                    <none
                                                         jcr:primaryType="nt:unstructured"
                                                         text="None"
                                                         value="none"/>

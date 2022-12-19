@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:template="/conf/pmi-spa-poc/settings/wcm/templates/spa-page-template"
@@ -12,116 +12,134 @@
             <responsivegrid
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <flex_container_18789630
+                <container_1027372162
+                    cq:styleIds="[1667809464819]"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="pmi-spa-poc/components/flex-container"
-                    alignContent="center"
-                    alignItems="center"
+                    sling:resourceType="pmi-spa-poc/components/container"
                     backgroundColor="#00D1D2"
-                    flexDirection="column"
-                    flexGrow="2"
-                    flexWrap="nowrap "
-                    justifyContent="center"
                     paddingLeft="none"
                     paddingRight="none">
-                    <flex_container_720840105
+                    <flex_container_18789
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/flex-container"
-                        alignContent="flex-start"
-                        alignItems="flex-start"
-                        flexDirection="row"
+                        alignContent="center"
+                        alignItems="center"
+                        backgroundColor="#00D1D2"
+                        flexDirection="column"
+                        flexGrow="2"
                         flexWrap="nowrap "
                         justifyContent="center"
                         paddingLeft="none"
                         paddingRight="none">
-                        <flex_container
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="pmi-spa-poc/components/flex-container"
-                            alignContent="flex-start"
-                            alignItems="flex-start"
-                            flexDirection="column"
-                            flexGrow="1"
-                            flexWrap="nowrap "
-                            justifyContent="flex-start">
-                            <separator
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="pmi-spa-poc/components/separator"
-                                size="20"/>
-                            <text
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="pmi-spa-poc/components/text"
-                                text="&lt;h2>Try before you buy.&lt;/h2>&#xd;&#xa;&lt;p>Try IQOS now for 30 days free of charge at home*&lt;br>&#xd;&#xa;or experience it in your IQOS store.&lt;/p>&#xd;&#xa;"
-                                textIsRich="true"/>
-                            <flex_container
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="pmi-spa-poc/components/flex-container"
-                                alignContent="flex-start"
-                                alignItems="flex-start"
-                                flexDirection="row"
-                                flexWrap="nowrap "
-                                justifyContent="flex-start">
-                                <button
-                                    jcr:primaryType="nt:unstructured"
-                                    jcr:title="Try for free"
-                                    sling:resourceType="pmi-spa-poc/components/button"
-                                    linkVariation="link-turquoise"
-                                    marginBottom="0"
-                                    marginEnd="10"
-                                    marginStart="0"
-                                    marginTop="0"
-                                    styleVariation="btn-slate-turquoise"
-                                    variationType="button"/>
-                                <button_1444785849
-                                    jcr:primaryType="nt:unstructured"
-                                    jcr:title="Or discover in store"
-                                    sling:resourceType="pmi-spa-poc/components/button"
-                                    linkVariation="link-turquoise"
-                                    marginBottom="0"
-                                    marginEnd="0"
-                                    marginStart="0"
-                                    marginTop="0"
-                                    styleVariation="btn-slate-turquoise"
-                                    variationType="button"/>
-                            </flex_container>
-                            <text_1652985107
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="pmi-spa-poc/components/text"
-                                text="&lt;blockquote>* Offer incl. 3 trial packs of HEETS is only valid for new customers.&lt;/blockquote>&#xd;&#xa;"
-                                textIsRich="true"/>
-                        </flex_container>
-                        <flex_container_15737
+                        <flex_container_720840105
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/flex-container"
                             alignContent="flex-start"
                             alignItems="flex-start"
                             flexDirection="row"
-                            flexGrow="1"
                             flexWrap="nowrap "
-                            justifyContent="flex-start">
-                            <image
+                            justifyContent="center"
+                            paddingLeft="none"
+                            paddingRight="none">
+                            <flex_container
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="pmi-spa-poc/components/image"
-                                displayPopupTitle="true"
-                                fileReference="/content/dam/wknd-spa-react/CRO-1203_LAS-Variant 1 620x400-promo-banner-may-boost-mobile-EN.png"
-                                imageFromPageImage="false"
-                                isDecorative="true"
-                                linkTarget="_self"
-                                titleValueFromDAM="true"/>
-                        </flex_container_15737>
-                    </flex_container_720840105>
-                    <separator_545313124
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="pmi-spa-poc/components/separator"
-                        size="20"/>
-                </flex_container_18789630>
+                                sling:resourceType="pmi-spa-poc/components/flex-container"
+                                alignContent="flex-start"
+                                alignItems="flex-start"
+                                flexDirection="column"
+                                flexGrow="1"
+                                flexWrap="nowrap "
+                                justifyContent="flex-start">
+                                <separator
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="pmi-spa-poc/components/separator"
+                                    size="20"/>
+                                <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="pmi-spa-poc/components/text"
+                                    text="&lt;h2>Try before you buy.&lt;/h2>&#xd;&#xa;&lt;p>Try IQOS now for 30 days free of charge at home*&lt;br>&#xd;&#xa;or experience it in your IQOS store.&lt;/p>&#xd;&#xa;"
+                                    textIsRich="true"/>
+                                <flex_container
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="pmi-spa-poc/components/flex-container"
+                                    alignContent="flex-start"
+                                    alignItems="flex-start"
+                                    flexDirection="row"
+                                    flexWrap="nowrap "
+                                    justifyContent="flex-start">
+                                    <button
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Try for free"
+                                        sling:resourceType="pmi-spa-poc/components/button"
+                                        linkVariation="link-turquoise"
+                                        marginBottom="0"
+                                        marginEnd="10"
+                                        marginStart="0"
+                                        marginTop="0"
+                                        styleVariation="btn-slate-turquoise"
+                                        variationType="button"/>
+                                    <button_1444785849
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Or discover in store"
+                                        sling:resourceType="pmi-spa-poc/components/button"
+                                        linkVariation="link-turquoise"
+                                        marginBottom="0"
+                                        marginEnd="0"
+                                        marginStart="0"
+                                        marginTop="0"
+                                        styleVariation="btn-slate-turquoise"
+                                        variationType="button"/>
+                                </flex_container>
+                                <text_1652985107
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="pmi-spa-poc/components/text"
+                                    text="&lt;blockquote>* Offer incl. 3 trial packs of HEETS is only valid for new customers.&lt;/blockquote>&#xd;&#xa;"
+                                    textIsRich="true"/>
+                            </flex_container>
+                            <flex_container_15737
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="pmi-spa-poc/components/flex-container"
+                                alignContent="flex-start"
+                                alignItems="flex-start"
+                                flexDirection="row"
+                                flexGrow="1"
+                                flexWrap="nowrap "
+                                justifyContent="flex-start">
+                                <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="pmi-spa-poc/components/image"
+                                    disableLazyLoading="false"
+                                    displayPopupTitle="true"
+                                    fileName="CRO-1203_LAS-Variant 1 620x400-promo-banner-may-boost-mobile-EN.png"
+                                    imageFromPageImage="false"
+                                    isDecorative="true"
+                                    linkTarget="_self"
+                                    titleValueFromDAM="true">
+                                    <file/>
+                                </image>
+                            </flex_container_15737>
+                        </flex_container_720840105>
+                        <separator_545313124
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="pmi-spa-poc/components/separator"
+                            size="20"/>
+                    </flex_container_18789>
+                </container_1027372162>
                 <separator
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="pmi-spa-poc/components/separator"/>
+                    sling:resourceType="pmi-spa-poc/components/separator">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="12"/>
+                    </cq:responsive>
+                </separator>
                 <container_36712564
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="pmi-spa-poc/components/container"
                     backgroundColor="#00D1D2"
-                    backgroundImageReference="/content/dam/wknd-spa-react/CRO-1203_LAS-Variant 1 1920x1080-hero-may-boost-desktop-DE.png"
+                    backgroundImageReference="/content/dam/pmi-spa-poc/CRO-1203_LAS-Variant 1 1920x1080-hero-may-boost-desktop-DE.png"
                     paddingLeft="none"
                     paddingRight="none">
                     <container_1862107560
@@ -222,7 +240,7 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/image"
                         displayPopupTitle="true"
-                        fileReference="/content/dam/wknd-spa-react/CRO-1203_LAS-Variant 1 620x400-promo-banner-may-boost-mobile-EN.png"
+                        fileReference="/content/dam/pmi-spa-poc/CRO-1203_LAS-Variant 1 620x400-promo-banner-may-boost-mobile-EN.png"
                         imageFromPageImage="false"
                         isDecorative="true"
                         linkTarget="_self"
@@ -239,6 +257,11 @@
                                 behavior="none"/>
                         </cq:responsive>
                     </image>
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            behavior="hide"/>
+                    </cq:responsive>
                 </container_36712564>
                 <container
                     jcr:primaryType="nt:unstructured"
@@ -284,7 +307,7 @@
                                 <text
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="pmi-spa-poc/components/text"
-                                    text="&lt;h4>&lt;span style=&quot;color: rgb(255,255,255);&quot;>HEETS Turquoise Selection&lt;/span>&lt;/h4>&#xa;&lt;p>&lt;span style=&quot;color: rgb(255,255,255);&quot;>Enjoy real tobacco with a delicate menthol aroma.&amp;nbsp;&lt;/span>&lt;/p>&#xa;"
+                                    text="&lt;h4>&lt;span style=&quot;color: rgb(255,255,255);&quot;>HEETS Turquoise Selection&lt;/span>&lt;/h4>&#xd;&#xa;&lt;p>&lt;span style=&quot;color: rgb(255,255,255);&quot;>Enjoy real tobacco with a delicate menthol aroma.&amp;nbsp;&lt;/span>&lt;/p>&#xd;&#xa;"
                                     textIsRich="true"/>
                                 <button
                                     jcr:primaryType="nt:unstructured"
@@ -305,7 +328,7 @@
                                 alt="heets"
                                 altValueFromDAM="false"
                                 displayPopupTitle="true"
-                                fileReference="/content/dam/wknd-spa-react/carousel1.png"
+                                fileReference="/content/dam/pmi-spa-poc/carousel1.png"
                                 imageFromPageImage="false"
                                 isDecorative="false"
                                 linkTarget="_self"
@@ -361,7 +384,7 @@
                                 alt="carousel2"
                                 altValueFromDAM="false"
                                 displayPopupTitle="true"
-                                fileReference="/content/dam/wknd-spa-react/carousel2.png"
+                                fileReference="/content/dam/pmi-spa-poc/carousel2.png"
                                 imageFromPageImage="false"
                                 isDecorative="false"
                                 linkTarget="_self"
@@ -435,7 +458,7 @@
                         alt="demo"
                         altValueFromDAM="false"
                         displayPopupTitle="true"
-                        fileReference="/content/dam/wknd-spa-react/tabakerhitzer-800x400.png"
+                        fileReference="/content/dam/pmi-spa-poc/tabakerhitzer-800x400.png"
                         imageFromPageImage="false"
                         isDecorative="false"
                         linkTarget="_self"
@@ -485,7 +508,7 @@
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/image"
                             displayPopupTitle="true"
-                            fileReference="/content/dam/wknd-spa-react/tabakerhitzer-800x400.png"
+                            fileReference="/content/dam/pmi-spa-poc/tabakerhitzer-800x400.png"
                             imageFromPageImage="false"
                             isDecorative="true"
                             linkTarget="_self"
@@ -571,7 +594,7 @@
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/image"
                             displayPopupTitle="true"
-                            fileReference="/content/dam/wknd-spa-react/heets-d.png"
+                            fileReference="/content/dam/pmi-spa-poc/heets-d.png"
                             imageFromPageImage="false"
                             isDecorative="true"
                             linkTarget="_self"
@@ -609,7 +632,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/image"
                                 displayPopupTitle="true"
-                                fileReference="/content/dam/wknd-spa-react/icons-64-orders-light-theme (1).svg"
+                                fileReference="/content/dam/pmi-spa-poc/icons-64-orders-light-theme (1).svg"
                                 imageFromPageImage="false"
                                 isDecorative="true"
                                 linkTarget="_self"
@@ -662,7 +685,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/image"
                                 displayPopupTitle="true"
-                                fileReference="/content/dam/wknd-spa-react/icons-64-iqos-return-light-theme-slice.svg"
+                                fileReference="/content/dam/pmi-spa-poc/icons-64-iqos-return-light-theme-slice.svg"
                                 imageFromPageImage="false"
                                 isDecorative="true"
                                 linkTarget="_self"
@@ -701,7 +724,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/image"
                                 displayPopupTitle="true"
-                                fileReference="/content/dam/wknd-spa-react/icons-64-help-light-theme.svg"
+                                fileReference="/content/dam/pmi-spa-poc/icons-64-help-light-theme.svg"
                                 imageFromPageImage="false"
                                 isDecorative="true"
                                 linkTarget="_self"
@@ -729,24 +752,24 @@
                         sling:resourceType="pmi-spa-poc/components/separator"/>
                 </container_1846707286>
                 <container_1027372162/>
-                <flex_container
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="pmi-spa-poc/components/flex-container">
-                    <login
+                <flex_container_login_placeholder
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="pmi-spa-poc/components/login"
-                        labelEmail="E-Mail"
-                        labelPassword="Password"
-                        labelPasswordForgotten="Password forgotten?"
-                        labelSubmitButton="Login"
-                        linkVariation="link-turquoise"
-                        marginBottom="0"
-                        marginEnd="0"
-                        marginStart="0"
-                        marginTop="0"
-                        styleVariation="btn-slate-turquoise"
-                        variationType="button"/>
-                </flex_container>
+                        sling:resourceType="pmi-spa-poc/components/flex-container">
+                    <login
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="pmi-spa-poc/components/login"
+                            labelEmail="E-Mail"
+                            labelPassword="Password"
+                            labelPasswordForgotten="Password forgotten?"
+                            labelSubmitButton="Login"
+                            linkVariation="link-turquoise"
+                            marginBottom="0"
+                            marginEnd="0"
+                            marginStart="0"
+                            marginTop="0"
+                            styleVariation="btn-slate-turquoise"
+                            variationType="button"/>
+                </flex_container_login_placeholder>
             </responsivegrid>
         </root>
     </jcr:content>
