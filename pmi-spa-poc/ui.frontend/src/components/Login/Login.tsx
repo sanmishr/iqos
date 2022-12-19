@@ -142,7 +142,7 @@ export default function Login(props: LoginProps): JSX.Element {
       {user && (
         <div className="success">
           {"Logged In Successfully"}
-          <img src="/content/dam/pmi/Login_Success.jpg" />
+          <img src="/content/dam/pmi-spa-poc/Login_Success.jpg" />
         </div>
       )}
     </div>

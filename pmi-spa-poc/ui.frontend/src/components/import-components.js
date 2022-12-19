@@ -63,7 +63,7 @@ const LazyLoginComponent = withAsyncImport(() => import(`./Login/Login`));
 const TitleV2 = withAsyncImport(() => import(`@adobe/aem-core-components-react-base/dist/authoring/title/v2/TitleV2`));
 const CarouselV1 = withAsyncImport(() => import(`@adobe/aem-core-components-react-spa/dist/container/carousel/v1/CarouselV1`));
 
-MapTo('pmi/components/button')(LazyButtonComponent, ButtonEditConfig);
+MapTo('pmi-spa-poc/components/button')(LazyButtonComponent, ButtonEditConfig);
 MapTo('pmi-spa-poc/components/download')(DownloadV1, {isEmpty: DownloadV1IsEmptyFn});
 MapTo('pmi-spa-poc/components/list')(ListV2, {isEmpty: ListV2IsEmptyFn});
 MapTo('pmi-spa-poc/components/teaser')(TeaserV1, {isEmpty: TeaserV1IsEmptyFn});
@@ -77,7 +77,7 @@ MapTo('pmi-spa-poc/components/accordion')(AccordionV1, {isEmpty: AccordionV1IsEm
 MapTo('pmi-spa-poc/components/carousel')(CarouselV1, {isEmpty: CarouselV1IsEmptyFn});
 MapTo('pmi-spa-poc/components/container')(ContainerV1, {isEmpty: ContainerV1IsEmptyFn});
 MapTo('pmi-spa-poc/components/flex-container')(ContainerV2, {isEmpty: ContainerV2IsEmptyFn});
-MapTo('pmi/components/login')(LazyLoginComponent, LoginEditConfig);
+MapTo('pmi-spa-poc/components/login')(LazyLoginComponent, LoginEditConfig);
 
 //lazy load of internal component (hello world)
 
