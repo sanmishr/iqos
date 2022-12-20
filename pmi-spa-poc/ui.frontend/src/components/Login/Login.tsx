@@ -97,7 +97,7 @@ export default function Login(props: LoginProps): JSX.Element {
                 />
 
                 <label htmlFor="password">
-          <span className={"form-label"}>
+          <span className="form-label">
             {props.labelPassword}
               <RequiredIndicator/>
           </span>
@@ -115,8 +115,8 @@ export default function Login(props: LoginProps): JSX.Element {
                     }}
                 />
 
-                <span className={"form-label"}>
-          <a className={"password-forgotten"} href="#pwForgotten">
+                <span className="form-label">
+          <a className="password-forgotten" href="#pwForgotten">
             {props.labelPasswordForgotten}
           </a>
         </span>
