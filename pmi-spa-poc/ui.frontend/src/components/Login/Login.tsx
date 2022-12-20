@@ -15,7 +15,7 @@ function RequiredIndicator() {
 
 export default function Login(props: LoginProps): JSX.Element {
     const [errorMessage, setErrorMessage] = useState("");
-    const [user, setUser] = useState({});
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [form, setForm] = useState({
         loginID: "",
         password: "",
@@ -65,7 +65,7 @@ export default function Login(props: LoginProps): JSX.Element {
                 if (data) {
                     if (data.isActive && data.profile) {
                         setErrorMessage("");
-                        setUser(true);
+                        setIsLoggedIn(true);
                     } else {
                         setErrorMessage(data.errorDetails);
                     }
@@ -132,7 +132,7 @@ export default function Login(props: LoginProps): JSX.Element {
                 <div className="error">{"Login Failed :" + errorMessage}</div>
             }
 
-            {user &&
+            {isLoggedIn &&
                 <div className="success">
                     {"Logged In Successfully"}
                     <img src="/content/dam/pmi-spa-poc/Login_Success.jpg" alt="Login Success"/>
