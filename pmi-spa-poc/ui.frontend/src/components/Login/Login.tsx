@@ -143,7 +143,7 @@ export default function Login(props: LoginProps): JSX.Element {
 }
 
 export const LoginEditConfig = {
-    emptyLabel: "Button",
+    emptyLabel: "Login",
 
     isEmpty: function (props: LoginProps) {
         return (
