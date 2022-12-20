@@ -60,16 +60,15 @@ class ContainerV2Impl extends AllowedComponentsContainer<ContainerV2Properties, 
     }
 
     init() {
-        // console.log('PROPS ContainerV2', this.props);
         if (this.mainDiv.current) {
             this.mainDiv.current.className = '';
             this.mainDiv.current.setAttribute('style', this.props.backgroundStyle);
             this.mainDiv.current.classList.add("flex-container");
             this.mainDiv.current.classList.add("flex-direction-" + this.props.flexDirection);
             this.mainDiv.current.classList.add("flex-shrink-" + this.props.flexShrink);
-            this.mainDiv.current!.parentElement!.parentElement!.classList!.add("flex-grow-" + this.props.flexGrow);
-            this.mainDiv.current.classList!.add("justify-content-" + this.props.justifyContent);
-            this.mainDiv.current.classList!.add("align-content-" + this.props.alignContent);
+            this.mainDiv.current.parentElement!.parentElement!.classList.add("flex-grow-" + this.props.flexGrow);
+            this.mainDiv.current.classList.add("justify-content-" + this.props.justifyContent);
+            this.mainDiv.current.classList.add("align-content-" + this.props.alignContent);
         }
     }
 
@@ -81,16 +80,20 @@ class ContainerV2Impl extends AllowedComponentsContainer<ContainerV2Properties, 
         this.init();
     }
 
+    /**
+     * Possible props:
+     *      componentMapping,
+     *      allowedComponents,
+     *      children,
+     *      cqPath,
+     *      cqItems,
+     *      cqItemsOrder,
+     *      isInEditor,
+     */
     render() {
         const {
-            componentMapping,
             allowedComponents,
-            children,
-            cqPath,
-            cqItems,
-            cqItemsOrder,
             isInEditor,
-            ...otherProps
         } = this.props;
 
         if (isInEditor && allowedComponents && allowedComponents.applicable) {

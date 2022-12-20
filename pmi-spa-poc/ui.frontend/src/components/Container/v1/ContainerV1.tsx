@@ -67,16 +67,20 @@ class ContainerV1Impl extends AllowedComponentsContainer<ContainerV1Properties, 
         }
     }
 
+    /**
+     * Possible props:
+     *      componentMapping,
+     *      allowedComponents,
+     *      children,
+     *      cqPath,
+     *      cqItems,
+     *      cqItemsOrder,
+     *      isInEditor,
+     */
     render() {
         const {
-            componentMapping,
             allowedComponents,
-            children,
-            cqPath,
-            cqItems,
-            cqItemsOrder,
             isInEditor,
-            ...otherProps
         } = this.props;
 
         if (isInEditor && allowedComponents && allowedComponents.applicable) {
