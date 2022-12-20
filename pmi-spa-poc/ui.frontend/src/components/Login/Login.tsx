@@ -22,7 +22,8 @@ export default function Login(props: LoginProps): JSX.Element {
     });
 
     useEffect(() => {
-        if (document.getElementsByClassName("wrapper")) {
+        // @FIXME -> This will not work with SSR. 'document' is not available on server side. POC only.
+        if (document && document.getElementsByClassName("wrapper")) {
             document
                 .getElementsByClassName("wrapper")[0]
                 .parentElement?.parentElement?.classList.add("login-wrapper");
