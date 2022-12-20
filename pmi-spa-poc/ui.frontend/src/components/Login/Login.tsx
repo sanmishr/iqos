@@ -128,17 +128,16 @@ export default function Login(props: LoginProps): JSX.Element {
                 />
             </form>
 
-            {errorMessage && (
+            {errorMessage &&
                 <div className="error">{"Login Failed :" + errorMessage}</div>
-            )}
+            }
 
-
-            {user && (
+            {user &&
                 <div className="success">
                     {"Logged In Successfully"}
-                    <img src="/content/dam/pmi-spa-poc/Login_Success.jpg"/>
+                    <img src="/content/dam/pmi-spa-poc/Login_Success.jpg" alt="Login Success"/>
                 </div>
-            )}
+            }
         </div>
     );
 }
