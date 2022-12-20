@@ -14,8 +14,8 @@
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import React, {Component} from 'react';
+import {Route} from 'react-router-dom';
 
 /**
  * Helper that facilitate the use of the {@link Route} component
@@ -29,26 +29,26 @@ import { Route } from 'react-router-dom';
  * @returns {CompositeRoute}
  */
 export const withRoute = (WrappedComponent, extension) => {
-  return class CompositeRoute extends Component {
-    render() {
-      let routePath = this.props.cqPath;
-      if (!routePath) {
-        return <WrappedComponent {...this.props} />;
-      }
+    return class CompositeRoute extends Component {
+        render() {
+            let routePath = this.props.cqPath;
+            if (!routePath) {
+                return <WrappedComponent {...this.props} />;
+            }
 
-      extension = extension || 'html';
+            extension = extension || 'html';
 
-      // Context path + route path + extension
-      return (
-        <Route
-          key={routePath}
-          exact
-          path={'(.*)' + routePath + '(.' + extension + ')?'}
-          render={routeProps => {
-            return <WrappedComponent {...this.props} {...routeProps} />;
-          }}
-        />
-      );
-    }
-  };
+            // Context path + route path + extension
+            return (
+                <Route
+                    key={routePath}
+                    exact
+                    path={'(.*)' + routePath + '(.' + extension + ')?'}
+                    render={routeProps => {
+                        return <WrappedComponent {...this.props} {...routeProps} />;
+                    }}
+                />
+            );
+        }
+    };
 };

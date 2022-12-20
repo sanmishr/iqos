@@ -14,12 +14,8 @@
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-import {
-  MapTo,
-  Page,
-  withComponentMappingContext
-} from '@adobe/aem-react-editable-components';
-import { withRoute } from '../RouteHelper/RouteHelper';
+import {MapTo, Page, withComponentMappingContext} from '@adobe/aem-react-editable-components';
+import {withRoute} from '../RouteHelper/RouteHelper';
 
 require('./Page.css');
 
@@ -27,14 +23,14 @@ require('./Page.css');
 // "pmi-spa-poc/components/page" resource type. For now, the rendering is
 // the same as the RootPage; this is more for illustration purposes
 class AppPage extends Page {
-  get containerProps() {
-    let attrs = super.containerProps;
-    attrs.className =
-      (attrs.className || '') + ' page ' + (this.props.cssClassNames || '');
-    return attrs;
-  }
+    get containerProps() {
+        let attrs = super.containerProps;
+        attrs.className =
+            (attrs.className || '') + ' page ' + (this.props.cssClassNames || '');
+        return attrs;
+    }
 }
 
 export default MapTo('pmi-spa-poc/components/page')(
-  withComponentMappingContext(withRoute(AppPage))
+    withComponentMappingContext(withRoute(AppPage))
 );
