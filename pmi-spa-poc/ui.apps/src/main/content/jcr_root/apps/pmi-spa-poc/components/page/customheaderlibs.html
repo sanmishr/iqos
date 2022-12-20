@@ -39,3 +39,7 @@
     There is currently no support for ContextHub in SPA projects:
     https://docs.adobe.com/content/help/en/experience-manager-64/developing/headless/spas/spa-overview.html#limitations
 */-->
+<div data-sly-use.domainHelper="domainHelper.js">
+    <link rel="prefetch" href = '${domainHelper.domainName}/content/dam/pmi-spa-poc/Login_Success.jpg'
+          onload="console.log('PMI-preload-performace-metric: prefetch-success',new Date().getTime())" crossorigin="anonymous" as="image"/>
+</div>
