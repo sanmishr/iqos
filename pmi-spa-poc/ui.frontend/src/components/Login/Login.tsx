@@ -10,7 +10,7 @@ interface LoginProps {
 }
 
 function RequiredIndicator() {
-    return <span className={"required"}>&nbsp;*</span>;
+    return <span className="required">&nbsp;*</span>;
 }
 
 export default function Login(props: LoginProps): JSX.Element {
