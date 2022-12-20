@@ -20,33 +20,30 @@ import './ExperienceFragment/ExperienceFragment';
 
 import {MapTo} from '@adobe/aem-react-editable-components';
 
-import {
-    CarouselV1IsEmptyFn
-} from '@adobe/aem-core-components-react-spa/dist/isEmptyFunctions';
+import {CarouselV1IsEmptyFn} from '@adobe/aem-core-components-react-spa/dist/isEmptyFunctions';
 
-import {
-    TitleV2IsEmptyFn
-} from '@adobe/aem-core-components-react-base/dist/isEmptyFunctions';
+import {TitleV2IsEmptyFn} from '@adobe/aem-core-components-react-base/dist/isEmptyFunctions';
 
-import {
-    TabsV1, TabsV1IsEmptyFn,
-    AccordionV1,AccordionV1IsEmptyFn,
-} from '@adobe/aem-core-components-react-spa';
+import {AccordionV1, AccordionV1IsEmptyFn, TabsV1, TabsV1IsEmptyFn,} from '@adobe/aem-core-components-react-spa';
 
 import ContainerV1 from './Container/v1/ContainerV1';
-import { ContainerV1IsEmptyFn } from './Container/v1/ContainerV1IsEmptyFn';
+import {ContainerV1IsEmptyFn} from './Container/v1/ContainerV1IsEmptyFn';
 
 import ContainerV2 from './Container/v2/ContainerV2';
-import { ContainerV2IsEmptyFn } from './Container/v2/ContainerV2IsEmptyFn';
+import {ContainerV2IsEmptyFn} from './Container/v2/ContainerV2IsEmptyFn';
 
 import {
-    BreadCrumbV2,BreadCrumbV2IsEmptyFn,
-    ImageV2,ImageV2IsEmptyFn,
+    BreadCrumbV2,
+    BreadCrumbV2IsEmptyFn,
+    DownloadV1,
+    DownloadV1IsEmptyFn,
+    ImageV2,
+    ImageV2IsEmptyFn,
     LanguageNavigationV1,
-    // NavigationV1,
-    TeaserV1,TeaserV1IsEmptyFn,
-    DownloadV1,DownloadV1IsEmptyFn,
-    ListV2,ListV2IsEmptyFn
+    ListV2,
+    ListV2IsEmptyFn,
+    TeaserV1,
+    TeaserV1IsEmptyFn
 } from '@adobe/aem-core-components-react-base';
 import {ButtonEditConfig} from "./Button/Button";
 import {LoginEditConfig} from "./Login/Login";

@@ -1,24 +1,25 @@
 import React from "react";
 import ReactDOMServer from 'react-dom/server';
 import App from "../App";
-import { StaticRouter } from "react-router-dom";
-import { Constants, EditorContext } from '@adobe/aem-react-editable-components';
-import { ModelManager } from '@adobe/aem-spa-page-model-manager';
+import {StaticRouter} from "react-router-dom";
+import {Constants, EditorContext} from '@adobe/aem-react-editable-components';
+import {ModelManager} from '@adobe/aem-spa-page-model-manager';
 import '../components/import-components';
 
 function renderModelToHTMLString(model, pagePath, requestUrl, requestPath, pageModelRootPath, isInEditor) {
     const html = ReactDOMServer.renderToString(
-        <StaticRouter location={ requestUrl } context={{}}>
+        <StaticRouter location={requestUrl} context={{}}>
             <EditorContext.Provider value={isInEditor}>
-                <App cqChildren={model[Constants.CHILDREN_PROP]} cqItems={model[Constants.ITEMS_PROP]} cqItemsOrder={model[Constants.ITEMS_ORDER_PROP]} cqPath={pageModelRootPath} locationPathname={requestPath}/>
+                <App cqChildren={model[Constants.CHILDREN_PROP]} cqItems={model[Constants.ITEMS_PROP]}
+                     cqItemsOrder={model[Constants.ITEMS_ORDER_PROP]} cqPath={pageModelRootPath} locationPathname={requestPath}/>
             </EditorContext.Provider>
         </StaticRouter>
     );
-    
+
 
     // We are using ' for the string to we need to make sure we are encoding all other '
     let state = {
-        rootModel : model,
+        rootModel: model,
         rootModelUrl: ModelManager.rootPath,
         pagePath
     };
@@ -29,6 +30,7 @@ function renderModelToHTMLString(model, pagePath, requestUrl, requestPath, pageM
          ${stateStr}
      </script>`;
 }
+
 async function processSPA(args) {
     const APP_ROOT_PATH = '/content/pmi-spa-poc/uk/en';
     const wcmMode = args.wcmmode;
