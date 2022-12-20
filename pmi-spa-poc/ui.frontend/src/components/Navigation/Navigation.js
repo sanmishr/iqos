@@ -61,23 +61,25 @@ class Navigation extends Component {
         })
             .then((res) => res.json())
             .then((result) => {
-                console.log('RES', result.data.mainNavigationByPath.item);
-                let menu = [];
-                let id = 1;
-                result.data.mainNavigationByPath.item.mainavigationsleft.forEach((element) => {
-                    element.id = ++id;
-                    element.position = 'left';
-                    menu.push(element);
-                });
-                result.data.mainNavigationByPath.item.mainnavigationright.forEach((el) => {
-                    el.id = ++id;
-                    el.position = 'right';
-                    menu.push(el);
-                });
+                if (result.data) {
+                    console.log('RES', result.data.mainNavigationByPath.item);
+                    let menu = [];
+                    let id = 1;
+                    result.data.mainNavigationByPath.item.mainavigationsleft.forEach((element) => {
+                        element.id = ++id;
+                        element.position = 'left';
+                        menu.push(element);
+                    });
+                    result.data.mainNavigationByPath.item.mainnavigationright.forEach((el) => {
+                        el.id = ++id;
+                        el.position = 'right';
+                        menu.push(el);
+                    });
 
-                this.setState(() => ({
-                    menu: menu
-                }));
+                    this.setState(() => ({
+                        menu: menu
+                    }));
+                }
             });
     }
 
