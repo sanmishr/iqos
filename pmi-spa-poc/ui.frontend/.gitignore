@@ -157,8 +157,6 @@ node_modules
 bower_components
 
 .next
-.env
-.env.local
 out
 
 *.sublime*
@@ -249,9 +247,12 @@ yarn.lock
 !.yarn/sdks
 !.yarn/versions
 
-# changes based on the OS, therefore ignore it
-yarn.lock
 
 actions/common/app.js
 actions/common/app.js.map
+
+.env
+.env.local
+.env.development
+.env.development.decoupled
 
