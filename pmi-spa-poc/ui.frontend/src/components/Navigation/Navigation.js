@@ -93,17 +93,17 @@ class Navigation extends Component {
                         </div>
                     </div>
                     <div className="center">
-                        <a href="/" class="logo">
+                        <a href="/" className="logo">
                             <img src="/etc.clientlibs/pmi-spa-poc/clientlibs/clientlib-react/resources/iqos.png" alt="logo"></img>
                         </a>
                     </div>
                     <div className="right">
-                        <a role="menuitem" href="/de/en/shopping-bag.html" class="actionBar__icon j-openToggle j-over actionbar-minicart-link">
+                        <a role="menuitem" href="/de/en/shopping-bag.html" className="actionBar__icon j-openToggle j-over actionbar-minicart-link">
                             <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                 <title>562C2D68-971C-429B-AA1D-B87DA05127F8</title>
-                                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Symbols" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                                     <g id="Navigation/S/Solid/Default" transform="translate(-320.000000, -16.000000)" stroke="#34303D"
-                                       stroke-width="1.5">
+                                       strokeWidth="1.5">
                                         <g id="Icons/24/Cart/LightTheme" transform="translate(320.000000, 16.000000)">
                                             <g id="Group" transform="translate(5.000000, 3.000000)">
                                                 <path
@@ -111,7 +111,7 @@ class Navigation extends Component {
                                                     id="Rectangle"></path>
                                                 <path
                                                     d="M4,0 L4,0 L4,0 L8,0 C9.1045695,-2.02906125e-16 10,0.8954305 10,2 L10,4 C10,5.1045695 9.1045695,6 8,6 L4,6 L4,6"
-                                                    id="Rectangle" stroke-linecap="round"
+                                                    id="Rectangle" strokeLinecap="round"
                                                     transform="translate(7.000000, 3.000000) rotate(-90.000000) translate(-7.000000, -3.000000) "></path>
                                             </g>
                                         </g>
@@ -129,24 +129,24 @@ class Navigation extends Component {
                     </div>
                 </div>
                 <div className="navigation">
-                    <div class="left">
+                    <div className="left">
                         <ul>
                             <MainMenu items={this.state.menu.filter(item => item.position === "left")} clickCallback={this.openSubMenu}/>
                         </ul>
                     </div>
-                    <div class="center">
-                        <a href="/" class="logo">
+                    <div className="center">
+                        <a href="/" className="logo">
                             <img src="/etc.clientlibs/pmi-spa-poc/clientlibs/clientlib-react/resources/iqos.png" alt="logo"></img>
                         </a>
                     </div>
-                    <div class="right">
+                    <div className="right">
                         <ul>
                             <MainMenu items={this.state.menu.filter(item => item.position === "right")} clickCallback={this.openSubMenu}/>
                             <li>
-                                <div class="user">
+                                <div className="user">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <g fill="none" fill-rule="evenodd">
-                                            <g stroke="#34303D" stroke-width="1.5">
+                                        <g fill="none" fillRule="evenodd">
+                                            <g stroke="#34303D" strokeWidth="1.5">
                                                 <g>
                                                     <g transform="translate(-912 -24) translate(912 24) translate(5 3.75)">
                                                         <path
@@ -157,7 +157,7 @@ class Navigation extends Component {
                                             </g>
                                         </g>
                                     </svg>
-                                    <div class="dropdown">
+                                    <div className="dropdown">
                                         <div>
                                             <a href="#login">Login</a>
                                         </div>
@@ -169,12 +169,12 @@ class Navigation extends Component {
                             </li>
                             <li>
                                 <a role="menuitem" href="/de/en/shopping-bag.html"
-                                   class="actionBar__icon j-openToggle j-over actionbar-minicart-link">
+                                   className="actionBar__icon j-openToggle j-over actionbar-minicart-link">
                                     <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                         <title>562C2D68-971C-429B-AA1D-B87DA05127F8</title>
-                                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Symbols" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                                             <g id="Navigation/S/Solid/Default" transform="translate(-320.000000, -16.000000)" stroke="#34303D"
-                                               stroke-width="1.5">
+                                               strokeWidth="1.5">
                                                 <g id="Icons/24/Cart/LightTheme" transform="translate(320.000000, 16.000000)">
                                                     <g id="Group" transform="translate(5.000000, 3.000000)">
                                                         <path
@@ -182,7 +182,7 @@ class Navigation extends Component {
                                                             id="Rectangle"></path>
                                                         <path
                                                             d="M4,0 L4,0 L4,0 L8,0 C9.1045695,-2.02906125e-16 10,0.8954305 10,2 L10,4 C10,5.1045695 9.1045695,6 8,6 L4,6 L4,6"
-                                                            id="Rectangle" stroke-linecap="round"
+                                                            id="Rectangle" strokeLinecap="round"
                                                             transform="translate(7.000000, 3.000000) rotate(-90.000000) translate(-7.000000, -3.000000) "></path>
                                                     </g>
                                                 </g>
