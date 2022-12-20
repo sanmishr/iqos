@@ -251,3 +251,7 @@ yarn.lock
 
 # changes based on the OS, therefore ignore it
 yarn.lock
+
+actions/common/app.js
+actions/common/app.js.map
+
