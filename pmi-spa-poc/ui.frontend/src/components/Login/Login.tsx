@@ -40,7 +40,11 @@ export default function Login(props: LoginProps): JSX.Element {
     const endpoint = process.env.REACT_APP_GIGYA_ENDPOINT;
     const options = {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods":"GET,POST,OPTIONS, HEAD"
+      },
     };
     const apiKey = process.env.REACT_APP_GIGYA_APIKEY
       ? process.env.REACT_APP_GIGYA_APIKEY
