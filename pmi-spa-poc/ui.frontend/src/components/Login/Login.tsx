@@ -55,9 +55,9 @@ export default function Login(props: LoginProps): JSX.Element {
             ["apiKey", apiKey],
         ]);
 
-        const getUrl = endpoint + "/accounts.login?" + params;
+        const url = endpoint + "/accounts.login?" + params;
 
-        fetch(getUrl, options)
+        fetch(url, options)
             .then((success) => {
                 return success.json();
             })
