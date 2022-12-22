@@ -5,35 +5,40 @@ $color-main: #34303d;
         color: red;
         margin-bottom: 48px;
     }
-
     .success {
         color: green;
         margin-bottom: 48px;
+        img {
+            width: 120px;
+            height: 120px;
+        }
     }
 }
-
 .flex-login-container {
     display: flex;
 }
-
 .login-wrapper {
-    margin: 213px auto 200px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    margin-top: 213px;
     display: flex;
     background: white;
     flex-direction: column !important;
     align-items: center !important;
     width: 640px;
 }
-
 .login-wrapper > div {
     width: 100%;
     padding: 0 7rem;
     box-sizing: border-box;
 }
 
-.login-wrapper > div:first-child {
+.login-wrapper .cmp-image__image {
     width: auto !important;
+}
+.login-wrapper .cmp-image {
     text-align: center;
+    margin: 48px 0 20px 0;
 }
 
 .required {
@@ -88,7 +93,6 @@ form {
         -moz-user-select: none;
         user-select: none;
         border-radius: 1.6rem;
-
         &:hover {
             background-color: #2c2934;
             border-color: #2a2631;

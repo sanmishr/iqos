@@ -44,7 +44,7 @@ import java.util.Map;
 @Exporter(name = ExporterConstants.SLING_MODEL_EXPORTER_NAME, extensions = ExporterConstants.SLING_MODEL_EXTENSION)
 @JsonIgnoreProperties({"columnClasses", "layoutContainer", "responsiveGrid", "columnClassNames", "gridClassNames"})
 public class FlexContainerModelImpl implements LayoutContainer {
-	protected static final String RESOURCE_TYPE = "pmi/components/flex-container";
+	protected static final String RESOURCE_TYPE = "pmi-spa-poc/components/flex-container";
 
 	@Self
 	@Via(type = ResourceSuperType.class)
