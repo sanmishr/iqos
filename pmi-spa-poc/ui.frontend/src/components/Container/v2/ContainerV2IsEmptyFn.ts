@@ -16,6 +16,6 @@
 
 import {ContainerV2Properties} from "./ContainerV2";
 
-export function ContainerV2IsEmptyFn(props:ContainerV2Properties) {
+export function ContainerV2IsEmptyFn(props: ContainerV2Properties) {
     return props.cqItemsOrder == null || props.cqItemsOrder.length === 0;
 }

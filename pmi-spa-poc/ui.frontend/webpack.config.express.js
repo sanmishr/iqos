@@ -18,7 +18,7 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 const webpack = require('webpack');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 var isTestEnvironment = process.env.NODE_ENV == 'test';
 
 const serverConfig = {
@@ -52,7 +52,7 @@ const serverConfig = {
     devtool: 'source-map',
 
     resolve: {
-        extensions: ['.js', 'jsx'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
 
         // This allows you to set a fallback for where Webpack should look for modules.
         // We placed these paths second because we want `node_modules` to "win"
@@ -65,14 +65,15 @@ const serverConfig = {
         rules: [
 
             {
-                test: /\.jsx?$/,
+                test: /\.(t|j)sx?$/,
                 enforce: 'post',
                 loader: require.resolve('babel-loader'),
                 options: {
                     babelrc: false,
                     presets: [
                         ['@babel/preset-env'],
-                        ['@babel/react']
+                        ['@babel/react'],
+                        ['@babel/preset-typescript']
                     ],
                     plugins: [
                         ['universal-import']
@@ -107,7 +108,7 @@ const serverConfig = {
             "API_HOST": process.env.API_HOST,
             "APP_ROOT_PATH": process.env.APP_ROOT_PATH
         }),
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(),
         // Output a single chunk at most to make sure all code is loaded on
         // the server side.
         new webpack.optimize.LimitChunkCountPlugin({

@@ -17,17 +17,13 @@
 import React, {RefObject} from "react";
 
 import {
-    ComponentMapping,
     AllowedComponentsContainer,
+    ComponentMapping,
     Container,
     ResponsiveGrid,
     ResponsiveGridProperties
 } from '@adobe/aem-react-editable-components';
-import {
-    CoreContainerProperties,
-    CoreContainerState,
-    withStandardBaseCssClass
-} from './AbstractCoreContainerComponent';
+import {CoreContainerProperties, CoreContainerState, withStandardBaseCssClass} from './AbstractCoreContainerComponent';
 
 export interface ContainerV2Properties extends CoreContainerProperties, ResponsiveGridProperties {
     backgroundStyle: string;
@@ -57,17 +53,22 @@ class ContainerV2Impl extends AllowedComponentsContainer<ContainerV2Properties, 
         this.mainDiv = React.createRef();
     }
 
+    get coreContainerProps() {
+        return {
+            className: 'container responsivegrid'
+        };
+    }
+
     init() {
-        // console.log('PROPS ContainerV2', this.props);
         if (this.mainDiv.current) {
             this.mainDiv.current.className = '';
             this.mainDiv.current.setAttribute('style', this.props.backgroundStyle);
             this.mainDiv.current.classList.add("flex-container");
             this.mainDiv.current.classList.add("flex-direction-" + this.props.flexDirection);
             this.mainDiv.current.classList.add("flex-shrink-" + this.props.flexShrink);
-            this.mainDiv.current!.parentElement!.parentElement!.classList!.add("flex-grow-" + this.props.flexGrow);
-            this.mainDiv.current.classList!.add("justify-content-" + this.props.justifyContent);
-            this.mainDiv.current.classList!.add("align-content-" + this.props.alignContent);
+            this.mainDiv.current.parentElement!.parentElement!.classList.add("flex-grow-" + this.props.flexGrow);
+            this.mainDiv.current.classList.add("justify-content-" + this.props.justifyContent);
+            this.mainDiv.current.classList.add("align-content-" + this.props.alignContent);
         }
     }
 
@@ -79,23 +80,20 @@ class ContainerV2Impl extends AllowedComponentsContainer<ContainerV2Properties, 
         this.init();
     }
 
-    get coreContainerProps() {
-        return {
-            className: 'container responsivegrid'
-        };
-    }
-
-
+    /**
+     * Possible props:
+     *      componentMapping,
+     *      allowedComponents,
+     *      children,
+     *      cqPath,
+     *      cqItems,
+     *      cqItemsOrder,
+     *      isInEditor,
+     */
     render() {
         const {
-            componentMapping,
             allowedComponents,
-            children,
-            cqPath,
-            cqItems,
-            cqItemsOrder,
             isInEditor,
-            ...otherProps
         } = this.props;
 
         if (isInEditor && allowedComponents && allowedComponents.applicable) {
@@ -118,19 +116,19 @@ class ContainerV2Impl extends AllowedComponentsContainer<ContainerV2Properties, 
             <div {...this.coreContainerProps}>
                 <div ref={this.mainDiv}
                      id={this.props.id}
-                     className={ `${this.props.baseCssClass} ${this.props.paddingLeft} ${this.props.paddingRight}` }>
+                     className={`${this.props.baseCssClass} ${this.props.paddingLeft} ${this.props.paddingRight}`}>
 
                     {(this.props.layout && this.props.layout === 'simple') &&
-                    <Container
-                        componentMapping={this.state.componentMapping}
-                        cqForceReload={this.props.cqForceReload}
-                        cqPath={this.props.cqPath}
-                        cqItems={this.props.cqItems}
-                        cqItemsOrder={this.props.cqItemsOrder}
-                        isInEditor={false}/>}
+                        <Container
+                            componentMapping={this.state.componentMapping}
+                            cqForceReload={this.props.cqForceReload}
+                            cqPath={this.props.cqPath}
+                            cqItems={this.props.cqItems}
+                            cqItemsOrder={this.props.cqItemsOrder}
+                            isInEditor={false}/>}
 
                     {(!this.props.layout || this.props.layout !== 'simple') &&
-                    <ResponsiveGrid {...gridProps}/>
+                        <ResponsiveGrid {...gridProps}/>
                     }
 
                     {this.placeholderComponent}

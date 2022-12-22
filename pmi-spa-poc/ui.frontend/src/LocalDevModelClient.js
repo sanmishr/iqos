@@ -3,7 +3,7 @@ import {ModelClient} from '@adobe/aem-spa-page-model-manager';
 /**
  * Used to make react-server possible (localhost development).
  */
-export default class LocalDevModelClient extends ModelClient{
+export default class LocalDevModelClient extends ModelClient {
 
     fetch(modelPath) {
 
@@ -24,7 +24,7 @@ export default class LocalDevModelClient extends ModelClient{
             }
         }).then((response) => {
             if ((response.status >= 200) && (response.status < 300)) {
-                return response.json() ;
+                return response.json();
             }
 
             return Promise.reject(response);

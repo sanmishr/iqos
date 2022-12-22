@@ -11,18 +11,18 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="pmi-spa-poc/components/container">
             <container
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="pmi-spa-poc/components/container">
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="pmi-spa-poc/components/container">
                 <title
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="pmi-spa-poc/components/title"/>
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="pmi-spa-poc/components/title"/>
                 <container
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="pmi-spa-poc/components/container"
-                        layout="responsiveGrid">
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="pmi-spa-poc/components/container"
+                    layout="responsiveGrid">
                     <addressbook
-                            jcr:primaryType="nt:unstructured"
-                             sling:resourceType="pmi-spa-poc/components/commerce/addressbook"/>
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="pmi-spa-poc/components/commerce/addressbook"/>
                 </container>
             </container>
         </root>

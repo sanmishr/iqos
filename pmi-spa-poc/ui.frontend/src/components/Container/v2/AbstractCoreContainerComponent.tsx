@@ -15,17 +15,17 @@
  */
 
 import * as React from 'react';
+import {ComponentType} from 'react';
 
-import {ContainerState, AllowedComponentsProperties} from '@adobe/aem-react-editable-components';
-import {ComponentType} from "react";
-import { Model } from '@adobe/aem-spa-page-model-manager';
+import {AllowedComponentsProperties, ContainerState} from '@adobe/aem-react-editable-components';
+import {Model} from '@adobe/aem-spa-page-model-manager';
 
-export interface HasBaseCssClass{
-    baseCssClass?:string;
+export interface HasBaseCssClass {
+    baseCssClass?: string;
 }
 
-export interface CoreContainerProperties extends AllowedComponentsProperties, HasBaseCssClass{
-    activeIndexFromAuthorPanel?:number
+export interface CoreContainerProperties extends AllowedComponentsProperties, HasBaseCssClass {
+    activeIndexFromAuthorPanel?: number
 }
 
 export interface CoreContainerItem extends Model {
@@ -41,9 +41,9 @@ export interface AuthorPanelSwitchState {
 }
 
 const isBrowser = (() => {
-    try{
+    try {
         return typeof window !== 'undefined';
-    }catch(err){
+    } catch (err) {
         return false;
     }
 })();
@@ -51,15 +51,15 @@ const isBrowser = (() => {
 
 export const withStandardBaseCssClass = <M extends HasBaseCssClass>
 (
-    Component:ComponentType<M>,
-    defaultBaseCssClass:string
-):React.ComponentType<M>  => {
-    return (props:M) => {
+    Component: ComponentType<M>,
+    defaultBaseCssClass: string
+): React.ComponentType<M> => {
+    return (props: M) => {
 
         const baseCssClass = props.baseCssClass;
         const toBeUsedCssClass = baseCssClass && baseCssClass.trim().length > 0 ? baseCssClass : defaultBaseCssClass;
 
-        const mergedProps: M= {
+        const mergedProps: M = {
             ...props,
             baseCssClass: toBeUsedCssClass
         };
@@ -69,17 +69,16 @@ export const withStandardBaseCssClass = <M extends HasBaseCssClass>
 };
 
 
-
 export const withAuthorPanelSwitch = <M extends CoreContainerProperties>(
-    Component:ComponentType<M>
-):React.ComponentType<M> => {
+    Component: ComponentType<M>
+): React.ComponentType<M> => {
 
     return class extends React.Component<M, AuthorPanelSwitchState> {
 
         //@ts-ignore
         messageChannel;
 
-        constructor(props:M) {
+        constructor(props: M) {
             super(props);
             this.state = {}
 
@@ -91,7 +90,7 @@ export const withAuthorPanelSwitch = <M extends CoreContainerProperties>(
             }
         }
 
-        callback(message:any){
+        callback(message: any) {
             if (message.data && message.data.id === this.props.cqPath) {
                 if (message.data.operation === "navigate") {
                     const index = message.data.index as number;
@@ -103,20 +102,20 @@ export const withAuthorPanelSwitch = <M extends CoreContainerProperties>(
         }
 
         componentDidMount(): void {
-            if(this.messageChannel){
+            if (this.messageChannel) {
                 this.messageChannel.subscribeRequestMessage("cmp.panelcontainer", this.callback);
             }
         }
 
         componentWillUnmount(): void {
-            if(this.messageChannel){
+            if (this.messageChannel) {
                 this.messageChannel.unsubscribeRequestMessage("cmp.panelcontainer", this.callback);
             }
         }
 
 
-        render(){
-            return <Component {...this.props} activeIndexFromAuthorPanel={this.state.activeIndexFromAuthorPanel} />;
+        render() {
+            return <Component {...this.props} activeIndexFromAuthorPanel={this.state.activeIndexFromAuthorPanel}/>;
         }
     }
 

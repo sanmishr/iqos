@@ -18,39 +18,41 @@
 
 package com.adobe.pmi.spa.poc.core.models;
 
+import com.adobe.cq.export.json.ComponentExporter;
+import com.adobe.cq.export.json.ExporterConstants;
 import com.adobe.cq.wcm.core.components.models.LayoutContainer;
 import com.day.cq.wcm.foundation.model.export.AllowedComponentsExporter;
 import com.day.cq.wcm.foundation.model.responsivegrid.ResponsiveGrid;
-
-import java.util.Map;
-
-import javax.annotation.PostConstruct;
-
-import com.adobe.cq.export.json.ComponentExporter;
-import com.adobe.cq.export.json.ExporterConstants;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Getter;
 import org.apache.sling.api.SlingHttpServletRequest;
-import org.apache.sling.models.annotations.Default;
-import org.apache.sling.models.annotations.Exporter;
-import org.apache.sling.models.annotations.Model;
-import org.apache.sling.models.annotations.Via;
+import org.apache.sling.models.annotations.*;
 import org.apache.sling.models.annotations.injectorspecific.Self;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import org.apache.sling.models.annotations.via.ResourceSuperType;
 
-@Model(adaptables = SlingHttpServletRequest.class, adapters = { LayoutContainer.class,
-		ComponentExporter.class }, resourceType = FlexContainerModelImpl.RESOURCE_TYPE)
+import javax.annotation.PostConstruct;
+import java.util.Map;
+
+
+@Getter
+@Model(adaptables = SlingHttpServletRequest.class,
+		adapters = {LayoutContainer.class, ComponentExporter.class},
+		resourceType = FlexContainerModelImpl.RESOURCE_TYPE,
+		defaultInjectionStrategy = DefaultInjectionStrategy.REQUIRED)
 @Exporter(name = ExporterConstants.SLING_MODEL_EXPORTER_NAME, extensions = ExporterConstants.SLING_MODEL_EXTENSION)
+@JsonIgnoreProperties({"columnClasses", "layoutContainer", "responsiveGrid", "columnClassNames", "gridClassNames"})
 public class FlexContainerModelImpl implements LayoutContainer {
 	protected static final String RESOURCE_TYPE = "pmi-spa-poc/components/flex-container";
 
 	@Self
 	@Via(type = ResourceSuperType.class)
-	private LayoutContainer layoutContainer;
-
+	private ResponsiveGrid responsiveGrid;
 	@Self
 	@Via(type = ResourceSuperType.class)
-	ResponsiveGrid responsiveGrid;
-
+	private LayoutContainer layoutContainer;
+	@JsonIgnore
 	@Self
 	private SlingHttpServletRequest request;
 
@@ -70,22 +72,22 @@ public class FlexContainerModelImpl implements LayoutContainer {
 	@Via("resource")
 	@Default(values = "none")
 	private String justifyContent;
-	
+
 	@ValueMapValue
 	@Via("resource")
 	@Default(values = "none")
 	private String alignContent;
-	
+
 	@ValueMapValue
 	@Via("resource")
 	@Default(values = "none")
 	private String alignItems;
-	
+
 	@ValueMapValue
 	@Via("resource")
 	@Default(values = "1")
 	private String flexGrow;
-	
+
 	@ValueMapValue
 	@Via("resource")
 	@Default(values = "none")
@@ -101,41 +103,10 @@ public class FlexContainerModelImpl implements LayoutContainer {
 	@Default(values = "none")
 	private String paddingRight;
 
-	public String getPaddingLeft() {
-		return paddingLeft;
-	}
-
-	public String getPaddingRight() {
-		return paddingRight;
-	}
-
-	public String getFlexDirection() {
-		return flexDirection;
-	}
-
-	public String getFlexWrap() {
-		return flexWrap;
-	}
-
-	public String getJustifyContent() {
-		return justifyContent;
-	}
-
-	public String getAlignContent() {
-		return alignContent;
-	}
-
-	public String getAlignItems() {
-		return alignItems;
-	}
-
-	public String getFlexGrow() {
-		return flexGrow;
-	}
-
-	public String getFlexShrink() {
-		return flexShrink;
-	}
+	//backgroundImage
+	@Optional
+	@ValueMapValue
+	private String fileReference;
 
 	@PostConstruct
 	protected void init() {
@@ -152,11 +123,6 @@ public class FlexContainerModelImpl implements LayoutContainer {
 	}
 
 	@Override
-	public String getAppliedCssClasses() {
-		return layoutContainer.getAppliedCssClasses();
-	}
-
-	@Override
 	public Map<String, ? extends ComponentExporter> getExportedItems() {
 		return layoutContainer.getExportedItems();
 	}
@@ -167,9 +133,34 @@ public class FlexContainerModelImpl implements LayoutContainer {
 	}
 
 	@Override
+	public String getAppliedCssClasses() {
+		return layoutContainer.getAppliedCssClasses();
+	}
+
+	@Override
+	public String getExportedType() {
+		return RESOURCE_TYPE;
+	}
+
+	@Override
 	public LayoutType getLayout() {
 		return layoutContainer.getLayout();
 	}
+
+	@Override
+	public String getAccessibilityLabel() {
+		return layoutContainer.getAccessibilityLabel();
+	}
+
+	@Override
+	public String getRoleAttribute() {
+		return layoutContainer.getRoleAttribute();
+	}
+
+	/*
+	 * public Map<String, String> getColumnClassNames() { return
+	 * responsiveGrid.getColumnClassNames(); }
+	 */
 
 	public int getColumnCount() {
 		return responsiveGrid.getColumnCount();
@@ -182,29 +173,4 @@ public class FlexContainerModelImpl implements LayoutContainer {
 	public String getGridClassNames() {
 		return responsiveGrid.getGridClassNames();
 	}
-
-	/*
-	 * public Map<String, String> getColumnClassNames() { return
-	 * responsiveGrid.getColumnClassNames(); }
-	 */
-
-	@Override
-	public String getAccessibilityLabel() {
-		return layoutContainer.getAccessibilityLabel();
-	}
-
-	@Override
-	public String getRoleAttribute() {
-		return layoutContainer.getRoleAttribute();
-	}
-
-	@Override
-	public String getExportedType() {
-		return RESOURCE_TYPE;
-	}
-
-	public String getRandom() {
-		return "Flex-Container";
-	}
-
 }

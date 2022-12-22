@@ -2,8 +2,6 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-05-30T14:51:39.028+03:00"
-        cq:lastModifiedBy="admin"
         cq:template="/conf/pmi-spa-poc/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
         jcr:title="pmi-spa-poc Home Page"
@@ -14,189 +12,144 @@
             <responsivegrid
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <flex_container_18789630
-                    jcr:created="{Date}2022-05-24T16:09:41.627+03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-05-30T13:51:23.658+03:00"
-                    jcr:lastModifiedBy="admin"
+                <container_1027372162
+                    cq:styleIds="[1667809464819]"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="pmi-spa-poc/components/flex-container"
-                    alignContent="center"
-                    alignItems="center"
+                    sling:resourceType="pmi-spa-poc/components/container"
                     backgroundColor="#00D1D2"
-                    flexDirection="column"
-                    flexGrow="2"
-                    flexWrap="nowrap "
-                    justifyContent="center"
                     paddingLeft="none"
                     paddingRight="none">
-                    <flex_container_720840105
-                        jcr:created="{Date}2022-05-30T10:54:54.416+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-30T14:26:17.734+03:00"
-                        jcr:lastModifiedBy="admin"
+                    <flex_container_18789
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/flex-container"
-                        alignContent="flex-start"
-                        alignItems="flex-start"
-                        flexDirection="row"
+                        alignContent="center"
+                        alignItems="center"
+                        backgroundColor="#00D1D2"
+                        flexDirection="column"
+                        flexGrow="2"
                         flexWrap="nowrap "
                         justifyContent="center"
                         paddingLeft="none"
                         paddingRight="none">
-                        <flex_container
-                            jcr:created="{Date}2022-05-25T09:35:26.488+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-05-30T12:41:38.708+03:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="pmi-spa-poc/components/flex-container"
-                            alignContent="flex-start"
-                            alignItems="flex-start"
-                            flexDirection="column"
-                            flexGrow="1"
-                            flexWrap="nowrap "
-                            justifyContent="flex-start">
-                            <separator
-                                jcr:created="{Date}2022-05-30T13:58:25.533+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-30T13:58:35.793+03:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="pmi-spa-poc/components/separator"
-                                size="20"/>
-                            <text
-                                jcr:created="{Date}2022-05-24T16:33:23.215+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-30T12:34:02.074+03:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="pmi-spa-poc/components/text"
-                                text="&lt;h2>Try before you buy.&lt;/h2>&#xd;&#xa;&lt;p>Try IQOS now for 30 days free of charge at home*&lt;br>&#xd;&#xa;or experience it in your IQOS store.&lt;/p>&#xd;&#xa;"
-                                textIsRich="true"/>
-                            <flex_container
-                                jcr:created="{Date}2022-05-30T12:36:17.002+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-30T12:41:33.463+03:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="pmi-spa-poc/components/flex-container"
-                                alignContent="flex-start"
-                                alignItems="flex-start"
-                                flexDirection="row"
-                                flexWrap="nowrap "
-                                justifyContent="flex-start">
-                                <button
-                                    jcr:created="{Date}2022-05-30T12:35:19.352+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-05-30T13:11:39.896+03:00"
-                                    jcr:lastModifiedBy="admin"
-                                    jcr:primaryType="nt:unstructured"
-                                    jcr:title="Try for free"
-                                    sling:resourceType="pmi-spa-poc/components/button"
-                                    linkVariation="link-turquoise"
-                                    marginBottom="0"
-                                    marginEnd="10"
-                                    marginStart="0"
-                                    marginTop="0"
-                                    styleVariation="btn-slate-turquoise"
-                                    variationType="button"/>
-                                <button_1444785849
-                                    jcr:created="{Date}2022-05-30T12:35:50.762+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-05-30T13:11:30.674+03:00"
-                                    jcr:lastModifiedBy="admin"
-                                    jcr:primaryType="nt:unstructured"
-                                    jcr:title="Or discover in store"
-                                    sling:resourceType="pmi-spa-poc/components/button"
-                                    linkVariation="link-turquoise"
-                                    marginBottom="0"
-                                    marginEnd="0"
-                                    marginStart="0"
-                                    marginTop="0"
-                                    styleVariation="btn-slate-turquoise"
-                                    variationType="button"/>
-                            </flex_container>
-                            <text_1652985107
-                                jcr:created="{Date}2022-05-30T12:46:36.406+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-30T12:46:49.693+03:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="pmi-spa-poc/components/text"
-                                text="&lt;blockquote>* Offer incl. 3 trial packs of HEETS is only valid for new customers.&lt;/blockquote>&#xd;&#xa;"
-                                textIsRich="true"/>
-                        </flex_container>
-                        <flex_container_15737
-                            jcr:created="{Date}2022-05-27T11:22:27.551+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-05-30T12:59:44.149+03:00"
-                            jcr:lastModifiedBy="admin"
+                        <flex_container_720840105
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/flex-container"
                             alignContent="flex-start"
                             alignItems="flex-start"
                             flexDirection="row"
-                            flexGrow="1"
                             flexWrap="nowrap "
-                            justifyContent="flex-start">
-                            <image
-                                jcr:created="{Date}2022-05-30T13:00:04.416+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-30T13:00:36.617+03:00"
-                                jcr:lastModifiedBy="admin"
+                            justifyContent="center"
+                            paddingLeft="none"
+                            paddingRight="none">
+                            <flex_container
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="pmi-spa-poc/components/image"
-                                displayPopupTitle="true"
-                                fileReference="/content/dam/wknd-spa-react/CRO-1203_LAS-Variant 1 620x400-promo-banner-may-boost-mobile-EN.png"
-                                imageFromPageImage="false"
-                                isDecorative="true"
-                                linkTarget="_self"
-                                titleValueFromDAM="true"/>
-                        </flex_container_15737>
-                    </flex_container_720840105>
-                    <separator_545313124
-                        jcr:created="{Date}2022-05-30T13:52:16.690+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-30T13:53:27.290+03:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="pmi-spa-poc/components/separator"
-                        size="20"/>
-                </flex_container_18789630>
+                                sling:resourceType="pmi-spa-poc/components/flex-container"
+                                alignContent="flex-start"
+                                alignItems="flex-start"
+                                flexDirection="column"
+                                flexGrow="1"
+                                flexWrap="nowrap "
+                                justifyContent="flex-start">
+                                <separator
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="pmi-spa-poc/components/separator"
+                                    size="20"/>
+                                <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="pmi-spa-poc/components/text"
+                                    text="&lt;h2>Try before you buy.&lt;/h2>&#xd;&#xa;&lt;p>Try IQOS now for 30 days free of charge at home*&lt;br>&#xd;&#xa;or experience it in your IQOS store.&lt;/p>&#xd;&#xa;"
+                                    textIsRich="true"/>
+                                <flex_container
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="pmi-spa-poc/components/flex-container"
+                                    alignContent="flex-start"
+                                    alignItems="flex-start"
+                                    flexDirection="row"
+                                    flexWrap="nowrap "
+                                    justifyContent="flex-start">
+                                    <button
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Try for free"
+                                        sling:resourceType="pmi-spa-poc/components/button"
+                                        link="/content/pmi-spa-poc/uk/en/login"
+                                        linkVariation="link-turquoise"
+                                        marginBottom="0"
+                                        marginEnd="10"
+                                        marginStart="0"
+                                        marginTop="0"
+                                        styleVariation="btn-slate-turquoise"
+                                        variationType="button"/>
+                                    <button_1444785849
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Or discover in store"
+                                        sling:resourceType="pmi-spa-poc/components/button"
+                                        linkVariation="link-turquoise"
+                                        marginBottom="0"
+                                        marginEnd="0"
+                                        marginStart="0"
+                                        marginTop="0"
+                                        styleVariation="btn-slate-turquoise"
+                                        variationType="button"/>
+                                </flex_container>
+                                <text_1652985107
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="pmi-spa-poc/components/text"
+                                    text="&lt;blockquote>* Offer incl. 3 trial packs of HEETS is only valid for new customers.&lt;/blockquote>&#xd;&#xa;"
+                                    textIsRich="true"/>
+                            </flex_container>
+                            <flex_container_15737
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="pmi-spa-poc/components/flex-container"
+                                alignContent="flex-start"
+                                alignItems="flex-start"
+                                flexDirection="row"
+                                flexGrow="1"
+                                flexWrap="nowrap "
+                                justifyContent="flex-start">
+                                <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="pmi-spa-poc/components/image"
+                                    disableLazyLoading="false"
+                                    displayPopupTitle="true"
+                                    fileName="CRO-1203_LAS-Variant 1 620x400-promo-banner-may-boost-mobile-EN.png"
+                                    imageFromPageImage="false"
+                                    isDecorative="true"
+                                    linkTarget="_self"
+                                    titleValueFromDAM="true">
+                                    <file/>
+                                </image>
+                            </flex_container_15737>
+                        </flex_container_720840105>
+                        <separator_545313124
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="pmi-spa-poc/components/separator"
+                            size="20"/>
+                    </flex_container_18789>
+                </container_1027372162>
                 <separator
-                    jcr:created="{Date}2022-05-30T13:51:49.926+03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-05-30T13:51:49.926+03:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="pmi-spa-poc/components/separator"/>
+                    sling:resourceType="pmi-spa-poc/components/separator">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="12"/>
+                    </cq:responsive>
+                </separator>
                 <container_36712564
-                    jcr:created="{Date}2022-05-17T22:55:24.328+03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-05-23T00:11:01.180+03:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="pmi-spa-poc/components/container"
                     backgroundColor="#00D1D2"
-                    backgroundImageReference="/content/dam/wknd-spa-react/CRO-1203_LAS-Variant 1 1920x1080-hero-may-boost-desktop-DE.png"
+                    backgroundImageReference="/content/dam/pmi-spa-poc/CRO-1203_LAS-Variant 1 1920x1080-hero-may-boost-desktop-DE.png"
                     paddingLeft="none"
                     paddingRight="none">
                     <container_1862107560
-                        jcr:created="{Date}2022-05-17T23:39:42.163+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-19T10:34:07.816+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/container"
                         id="header-container-test-id"
                         paddingLeft="padding-left-sm"
                         paddingRight="padding-right-sm">
                         <container
-                            jcr:created="{Date}2022-05-17T22:57:23.728+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-05-17T22:57:23.728+03:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/container">
                             <cq:responsive jcr:primaryType="nt:unstructured">
@@ -210,26 +163,14 @@
                                     width="12"/>
                             </cq:responsive>
                             <separator
-                                jcr:created="{Date}2022-05-17T23:05:27.719+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-17T23:05:27.719+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/separator"/>
                             <text
-                                jcr:created="{Date}2022-05-17T22:58:30.543+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-17T22:59:22.123+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/text"
                                 text="&lt;h2>Try before you buy.&lt;/h2>&#xd;&#xa;&lt;p>Try IQOS now for 30 days free of charge at home*&lt;br />&#xd;&#xa;or experience it in your IQOS store.&lt;/p>&#xd;&#xa;"
                                 textIsRich="true"/>
                             <flex_container
-                                jcr:created="{Date}2022-05-30T14:50:11.925+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-30T14:50:31.225+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/flex-container"
                                 alignContent="flex-start"
@@ -240,10 +181,6 @@
                                 paddingLeft="none"
                                 paddingRight="none">
                                 <button
-                                    jcr:created="{Date}2022-05-17T23:00:29.600+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-05-30T14:51:11.323+03:00"
-                                    jcr:lastModifiedBy="admin"
                                     jcr:primaryType="nt:unstructured"
                                     jcr:title="Try for free"
                                     sling:resourceType="pmi-spa-poc/components/button"
@@ -267,10 +204,6 @@
                                     </cq:responsive>
                                 </button>
                                 <button_308981310
-                                    jcr:created="{Date}2022-05-17T23:01:10.910+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-05-17T23:01:38.608+03:00"
-                                    jcr:lastModifiedBy="admin"
                                     jcr:primaryType="nt:unstructured"
                                     jcr:title="Or discover in store"
                                     sling:resourceType="pmi-spa-poc/components/button"
@@ -293,19 +226,11 @@
                                     </cq:responsive>
                                 </button_308981310>
                                 <separator_60131413
-                                    jcr:created="{Date}2022-05-17T23:41:00.775+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-05-18T15:03:48.977+03:00"
-                                    jcr:lastModifiedBy="admin"
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="pmi-spa-poc/components/separator"
                                     size="50"/>
                             </flex_container>
                             <text_2010432185
-                                jcr:created="{Date}2022-05-17T23:04:22.359+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-17T23:04:40.067+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/text"
                                 text="&lt;blockquote>* Offer incl. 3 trial packs of HEETS is only valid for new customers.&lt;/blockquote>&#xd;&#xa;"
@@ -313,14 +238,10 @@
                         </container>
                     </container_1862107560>
                     <image
-                        jcr:created="{Date}2022-05-18T10:28:29.068+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T10:28:44.133+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/image"
                         displayPopupTitle="true"
-                        fileReference="/content/dam/wknd-spa-react/CRO-1203_LAS-Variant 1 620x400-promo-banner-may-boost-mobile-EN.png"
+                        fileReference="/content/dam/pmi-spa-poc/CRO-1203_LAS-Variant 1 620x400-promo-banner-may-boost-mobile-EN.png"
                         imageFromPageImage="false"
                         isDecorative="true"
                         linkTarget="_self"
@@ -337,63 +258,40 @@
                                 behavior="none"/>
                         </cq:responsive>
                     </image>
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            behavior="hide"/>
+                    </cq:responsive>
                 </container_36712564>
                 <container
-                    jcr:created="{Date}2022-05-17T23:45:26.290+03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-05-17T23:45:26.290+03:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="pmi-spa-poc/components/container">
                     <separator
-                        jcr:created="{Date}2022-05-18T00:09:58.551+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-20T10:58:08.379+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/separator"
                         size="100"/>
                     <text_140817662
-                        jcr:created="{Date}2022-05-17T23:42:39.693+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-20T11:51:39.899+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/text"
                         text="&lt;h2 style=&quot;text-align: center;&quot;>Switch to &lt;span style=&quot;color: #0074D9;&quot;>IQOS&lt;/span> now:&lt;/h2>&#xd;&#xa;"
                         textIsRich="true"/>
                     <separator_1983341837
-                        jcr:created="{Date}2022-05-20T11:13:29.366+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-20T11:13:29.366+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/separator"/>
                     <carousel
-                        jcr:created="{Date}2022-05-17T23:46:31.171+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T00:24:59.255+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/carousel"
                         autopauseDisabled="false"
                         autoplay="true"
                         delay="5000">
                         <container
-                            jcr:created="{Date}2022-05-17T23:46:42.659+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-05-23T09:45:18.362+03:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/container"
                             backgroundColor="#34303D"
                             paddingLeft="padding-left-lg"
                             paddingRight="none">
                             <container
-                                jcr:created="{Date}2022-05-18T00:07:40.233+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-23T00:10:43.739+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/container"
                                 paddingLeft="padding-left-lg"
@@ -405,26 +303,14 @@
                                         width="6"/>
                                 </cq:responsive>
                                 <separator
-                                    jcr:created="{Date}2022-05-23T09:46:14.787+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-05-23T09:46:14.787+03:00"
-                                    jcr:lastModifiedBy="admin"
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="pmi-spa-poc/components/separator"/>
                                 <text
-                                    jcr:created="{Date}2022-05-17T23:46:57.779+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-05-20T12:40:03.067+03:00"
-                                    jcr:lastModifiedBy="admin"
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="pmi-spa-poc/components/text"
-                                    text="&lt;h4>&lt;span style=&quot;color: rgb(255,255,255);&quot;>HEETS Turquoise Selection&lt;/span>&lt;/h4>&#xa;&lt;p>&lt;span style=&quot;color: rgb(255,255,255);&quot;>Enjoy real tobacco with a delicate menthol aroma.&amp;nbsp;&lt;/span>&lt;/p>&#xa;"
+                                    text="&lt;h4>&lt;span style=&quot;color: rgb(255,255,255);&quot;>HEETS Turquoise Selection&lt;/span>&lt;/h4>&#xd;&#xa;&lt;p>&lt;span style=&quot;color: rgb(255,255,255);&quot;>Enjoy real tobacco with a delicate menthol aroma.&amp;nbsp;&lt;/span>&lt;/p>&#xd;&#xa;"
                                     textIsRich="true"/>
                                 <button
-                                    jcr:created="{Date}2022-05-18T00:12:33.109+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-05-18T00:13:00.268+03:00"
-                                    jcr:lastModifiedBy="admin"
                                     jcr:primaryType="nt:unstructured"
                                     jcr:title="Buy now"
                                     sling:resourceType="pmi-spa-poc/components/button"
@@ -438,16 +324,12 @@
                                     variationType="button"/>
                             </container>
                             <image
-                                jcr:created="{Date}2022-05-18T00:08:05.152+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-18T00:08:34.748+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/image"
                                 alt="heets"
                                 altValueFromDAM="false"
                                 displayPopupTitle="true"
-                                fileReference="/content/dam/wknd-spa-react/carousel1.png"
+                                fileReference="/content/dam/pmi-spa-poc/carousel1.png"
                                 imageFromPageImage="false"
                                 isDecorative="false"
                                 linkTarget="_self"
@@ -462,32 +344,18 @@
                         </container>
                         <item_1652820667103
                             cq:panelTitle="222"
-                            jcr:lastModified="{Date}2022-05-23T09:45:34.137+03:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/container"
                             backgroundColor="#00D1D2"
                             paddingLeft="padding-left-lg"
                             paddingRight="none">
                             <container
-                                jcr:created="{Date}2022-05-18T00:03:24.345+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-18T00:03:24.345+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/container">
                                 <separator
-                                    jcr:created="{Date}2022-05-18T00:03:47.880+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-05-18T00:03:47.880+03:00"
-                                    jcr:lastModifiedBy="admin"
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="pmi-spa-poc/components/separator"/>
                                 <text
-                                    jcr:created="{Date}2022-05-17T23:52:33.948+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-05-18T00:20:34.361+03:00"
-                                    jcr:lastModifiedBy="admin"
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="pmi-spa-poc/components/text"
                                     text="&lt;h4>The new home of Services &amp;amp; Privileges&lt;/h4>&#xd;&#xa;&lt;p>With myIQOS you'll find support as you take the next step on your journey with IQOS.&lt;/p>&#xd;&#xa;"
@@ -499,10 +367,6 @@
                                         width="6"/>
                                 </cq:responsive>
                                 <button
-                                    jcr:created="{Date}2022-05-18T00:20:41.345+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-05-18T00:21:04.244+03:00"
-                                    jcr:lastModifiedBy="admin"
                                     jcr:primaryType="nt:unstructured"
                                     jcr:title="Discover myIQOS"
                                     sling:resourceType="pmi-spa-poc/components/button"
@@ -516,16 +380,12 @@
                                     variationType="button"/>
                             </container>
                             <image
-                                jcr:created="{Date}2022-05-18T00:18:48.198+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-18T00:19:47.701+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/image"
                                 alt="carousel2"
                                 altValueFromDAM="false"
                                 displayPopupTitle="true"
-                                fileReference="/content/dam/wknd-spa-react/carousel2.png"
+                                fileReference="/content/dam/pmi-spa-poc/carousel2.png"
                                 imageFromPageImage="false"
                                 isDecorative="false"
                                 linkTarget="_self"
@@ -540,42 +400,22 @@
                         </item_1652820667103>
                     </carousel>
                     <separator_1611142884
-                        jcr:created="{Date}2022-05-18T00:26:08.075+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T00:26:08.075+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/separator"/>
                 </container>
                 <container_215126956
-                    jcr:created="{Date}2022-05-18T00:26:37.368+03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-05-18T00:27:13.249+03:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="pmi-spa-poc/components/container"
                     backgroundColor="#f4f4f4">
                     <separator
-                        jcr:created="{Date}2022-05-18T00:28:56.196+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T00:28:56.196+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/separator"/>
                     <text
-                        jcr:created="{Date}2022-05-18T00:27:34.789+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-20T12:40:29.716+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/text"
                         text="&lt;h2 style=&quot;text-align: center;&quot;>95% fewer harmful chemicals.&lt;/h2>&#xd;&#xa;&lt;p style=&quot;text-align: center;&quot;>Compared to cigarettes.*&lt;br>&#xd;&#xa;Because the tobacco is heated and not burned.&lt;/p>&#xd;&#xa;"
                         textIsRich="true"/>
                     <button
-                        jcr:created="{Date}2022-05-18T00:29:51.632+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T00:30:13.699+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Switch now"
                         sling:resourceType="pmi-spa-poc/components/button"
@@ -595,55 +435,31 @@
                         </cq:responsive>
                     </button>
                     <separator_1311460503
-                        jcr:created="{Date}2022-05-18T00:30:22.554+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T00:30:22.554+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/separator"/>
                     <text_1559161425
-                        jcr:created="{Date}2022-05-18T00:30:41.187+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T00:30:56.548+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/text"
                         text="&lt;blockquote>*Average reduction in the levels of a range of harmful chemicals from IQOS (9 so-called “priority toxicants” identified by the WHO) compared to the smoke from a reference cigarette (3R4F). Based on Health Canada's Intense Smoking Regime without nicotine.&lt;/blockquote>&#xd;&#xa;"
                         textIsRich="true"/>
                     <separator_1061358241
-                        jcr:created="{Date}2022-05-18T00:31:02.456+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T00:31:02.456+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/separator"/>
                 </container_215126956>
                 <container_699793410
-                    jcr:created="{Date}2022-05-18T00:36:43.706+03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-05-18T00:37:07.247+03:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="pmi-spa-poc/components/container"
                     backgroundColor="#00D1D2">
                     <separator
-                        jcr:created="{Date}2022-05-18T00:37:00.682+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T00:37:00.682+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/separator"/>
                     <image
-                        jcr:created="{Date}2022-05-18T00:38:23.961+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T00:38:58.333+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/image"
                         alt="demo"
                         altValueFromDAM="false"
                         displayPopupTitle="true"
-                        fileReference="/content/dam/wknd-spa-react/tabakerhitzer-800x400.png"
+                        fileReference="/content/dam/pmi-spa-poc/tabakerhitzer-800x400.png"
                         imageFromPageImage="false"
                         isDecorative="false"
                         linkTarget="_self"
@@ -656,19 +472,11 @@
                         </cq:responsive>
                     </image>
                     <text
-                        jcr:created="{Date}2022-05-18T00:39:54.159+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-20T12:41:00.795+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/text"
                         text="&lt;h6 style=&quot;text-align: center;&quot;>Our best heated tobacco device&lt;/h6>&#xa;&lt;p style=&quot;text-align: center;&quot;>IQOS 3 DUO for €49.&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <button
-                        jcr:created="{Date}2022-05-18T00:40:41.177+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T00:40:51.028+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Buy now"
                         sling:resourceType="pmi-spa-poc/components/button"
@@ -687,17 +495,9 @@
                         </cq:responsive>
                     </button>
                     <separator_481944975
-                        jcr:created="{Date}2022-05-18T00:42:58.533+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T00:42:58.533+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/separator"/>
                     <flex_container
-                        jcr:created="{Date}2022-05-30T12:53:15.232+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-30T12:54:34.100+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/flex-container"
                         alignContent="center"
@@ -706,41 +506,25 @@
                         flexWrap="nowrap "
                         justifyContent="center">
                         <image
-                            jcr:created="{Date}2022-05-30T13:01:10.433+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-05-30T13:01:45.093+03:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/image"
                             displayPopupTitle="true"
-                            fileReference="/content/dam/wknd-spa-react/tabakerhitzer-800x400.png"
+                            fileReference="/content/dam/pmi-spa-poc/tabakerhitzer-800x400.png"
                             imageFromPageImage="false"
                             isDecorative="true"
                             linkTarget="_self"
                             titleValueFromDAM="false"/>
                         <text
-                            jcr:created="{Date}2022-05-30T12:53:28.302+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-05-30T13:04:19.505+03:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/text"
                             text="&lt;h6>Our best heated tobacco device&lt;/h6>&#xd;&#xa;"
                             textIsRich="true"/>
                         <text_1977687933
-                            jcr:created="{Date}2022-05-30T13:04:10.034+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-05-30T13:04:14.690+03:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/text"
                             text="&lt;p>IQOS 3 DUO for €49.&lt;/p>&#xd;&#xa;"
                             textIsRich="true"/>
                         <button_1459347301
-                            jcr:created="{Date}2022-05-30T12:53:46.819+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-05-30T12:54:18.400+03:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             jcr:title="Buy now"
                             sling:resourceType="pmi-spa-poc/components/button"
@@ -752,59 +536,31 @@
                             styleVariation="btn-slate-turquoise"
                             variationType="button"/>
                         <separator
-                            jcr:created="{Date}2022-05-30T13:05:13.909+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-05-30T13:05:13.909+03:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/separator"/>
                     </flex_container>
                 </container_699793410>
                 <container_1846707286
-                    jcr:created="{Date}2022-05-18T00:44:02.010+03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-05-18T00:44:02.010+03:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="pmi-spa-poc/components/container">
                     <separator
-                        jcr:created="{Date}2022-05-18T00:44:56.880+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T00:44:56.880+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/separator"/>
                     <text
-                        jcr:created="{Date}2022-05-18T00:43:25.506+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-20T12:41:25.159+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/text"
                         text="&lt;h3 style=&quot;text-align: center;&quot;>14,7 million* adult smokers have already switched to IQOS, the smoke-free alternative to cigarettes.&amp;nbsp;&lt;/h3>&#xa;&lt;blockquote style=&quot;text-align: center;&quot;>* PMI Financials or estimates, IQOS user panels and PMI Market Research. Status as of July 2021. IQOS users who have completely quit cigarettes and for whom HEETS sticks represent at least 70% of their past 7-day heated tobacco consumption.&lt;/blockquote>&#xa;"
                         textIsRich="true"/>
                     <separator_1061003660
-                        jcr:created="{Date}2022-05-18T00:45:05.269+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T00:45:05.269+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/separator"/>
                     <container_100818928
-                        jcr:created="{Date}2022-05-18T01:12:44.955+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T15:04:33.302+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/container"
                         backgroundColor="#E27D34"
                         paddingLeft="padding-left-md"
                         paddingRight="padding-right-sm">
                         <container_1781769933
-                            jcr:created="{Date}2022-05-18T00:47:23.632+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-05-23T00:10:31.862+03:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/container"
                             paddingLeft="padding-left-lg"
@@ -816,26 +572,14 @@
                                     width="6"/>
                             </cq:responsive>
                             <separator
-                                jcr:created="{Date}2022-05-18T00:49:54.496+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-18T00:49:54.496+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/separator"/>
                             <text
-                                jcr:created="{Date}2022-05-18T00:46:46.989+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-18T00:49:42.036+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/text"
                                 text="&lt;h2>HEETS made for IQOS&lt;/h2>&#xd;&#xa;&lt;p>IQOS and HEETS are the perfect combination to enjoy the real taste of tobacco.​&lt;/p>&#xd;&#xa;"
                                 textIsRich="true"/>
                             <button
-                                jcr:created="{Date}2022-05-18T00:50:00.965+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-18T00:50:16.748+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Discover HEETS"
                                 sling:resourceType="pmi-spa-poc/components/button"
@@ -848,14 +592,10 @@
                                 variationType="button"/>
                         </container_1781769933>
                         <image
-                            jcr:created="{Date}2022-05-18T01:14:45.329+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-05-18T01:15:02.894+03:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/image"
                             displayPopupTitle="true"
-                            fileReference="/content/dam/wknd-spa-react/heets-d.png"
+                            fileReference="/content/dam/pmi-spa-poc/heets-d.png"
                             imageFromPageImage="false"
                             isDecorative="true"
                             linkTarget="_self"
@@ -869,24 +609,12 @@
                         </image>
                     </container_100818928>
                     <separator_2095269653
-                        jcr:created="{Date}2022-05-18T01:15:44.960+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T01:15:44.960+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/separator"/>
                     <container_1038156398
-                        jcr:created="{Date}2022-05-18T00:55:12.668+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T00:55:12.668+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/container">
                         <container
-                            jcr:created="{Date}2022-05-18T00:58:38.021+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-05-18T00:58:38.021+03:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/container">
                             <cq:responsive jcr:primaryType="nt:unstructured">
@@ -902,14 +630,10 @@
                                     width="6"/>
                             </cq:responsive>
                             <image
-                                jcr:created="{Date}2022-05-18T00:57:55.634+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-18T01:03:25.392+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/image"
                                 displayPopupTitle="true"
-                                fileReference="/content/dam/wknd-spa-react/icons-64-orders-light-theme (1).svg"
+                                fileReference="/content/dam/pmi-spa-poc/icons-64-orders-light-theme (1).svg"
                                 imageFromPageImage="false"
                                 isDecorative="true"
                                 linkTarget="_self"
@@ -927,10 +651,6 @@
                                 </cq:responsive>
                             </image>
                             <text
-                                jcr:created="{Date}2022-05-18T00:55:39.144+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-20T12:41:45.139+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/text"
                                 text="&lt;h4 style=&quot;text-align: center;&quot;>Free delivery&lt;/h4>&#xd;&#xa;&lt;p style=&quot;text-align: center;&quot;>Delivery is free and only takes &lt;br />&#xd;&#xa;1-3 workdays.&lt;/p>&#xd;&#xa;"
@@ -948,10 +668,6 @@
                             </text>
                         </container>
                         <container_1261483960
-                            jcr:created="{Date}2022-05-18T00:59:20.310+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-05-18T00:59:20.310+03:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/container">
                             <cq:responsive jcr:primaryType="nt:unstructured">
@@ -967,14 +683,10 @@
                                     width="6"/>
                             </cq:responsive>
                             <image
-                                jcr:created="{Date}2022-05-18T00:59:43.727+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-18T01:00:10.386+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/image"
                                 displayPopupTitle="true"
-                                fileReference="/content/dam/wknd-spa-react/icons-64-iqos-return-light-theme-slice.svg"
+                                fileReference="/content/dam/pmi-spa-poc/icons-64-iqos-return-light-theme-slice.svg"
                                 imageFromPageImage="false"
                                 isDecorative="true"
                                 linkTarget="_self"
@@ -991,20 +703,12 @@
                                 </cq:responsive>
                             </image>
                             <text
-                                jcr:created="{Date}2022-05-18T01:01:27.309+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-20T12:41:53.760+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/text"
                                 text="&lt;h4 style=&quot;text-align: center;&quot;>Free return shipping&lt;/h4>&#xd;&#xa;&lt;p style=&quot;text-align: center;&quot;>Returns are always free of shipping costs for you.&lt;/p>&#xd;&#xa;"
                                 textIsRich="true"/>
                         </container_1261483960>
                         <container_1997109315
-                            jcr:created="{Date}2022-05-18T01:00:22.445+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-05-18T01:00:22.445+03:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="pmi-spa-poc/components/container">
                             <cq:responsive jcr:primaryType="nt:unstructured">
@@ -1018,14 +722,10 @@
                                     width="6"/>
                             </cq:responsive>
                             <image
-                                jcr:created="{Date}2022-05-18T01:00:44.800+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-18T01:00:58.991+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/image"
                                 displayPopupTitle="true"
-                                fileReference="/content/dam/wknd-spa-react/icons-64-help-light-theme.svg"
+                                fileReference="/content/dam/pmi-spa-poc/icons-64-help-light-theme.svg"
                                 imageFromPageImage="false"
                                 isDecorative="true"
                                 linkTarget="_self"
@@ -1042,10 +742,6 @@
                                 </cq:responsive>
                             </image>
                             <text
-                                jcr:created="{Date}2022-05-18T01:02:18.165+03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-05-20T12:42:10.088+03:00"
-                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="pmi-spa-poc/components/text"
                                 text="&lt;h4 style=&quot;text-align: center;&quot;>Personal support&lt;/h4>&#xa;&lt;p style=&quot;text-align: center;&quot;>Our IQOS experts are always there for you.&lt;/p>&#xa;"
@@ -1053,13 +749,27 @@
                         </container_1997109315>
                     </container_1038156398>
                     <separator_897803899
-                        jcr:created="{Date}2022-05-18T01:16:33.018+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-18T01:16:33.018+03:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="pmi-spa-poc/components/separator"/>
                 </container_1846707286>
+                <flex_container_login_placeholder
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="pmi-spa-poc/components/flex-container">
+                    <login
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="pmi-spa-poc/components/login"
+                        labelEmail="E-Mail"
+                        labelPassword="Password"
+                        labelPasswordForgotten="Password forgotten?"
+                        labelSubmitButton="Login"
+                        linkVariation="link-turquoise"
+                        marginBottom="0"
+                        marginEnd="0"
+                        marginStart="0"
+                        marginTop="0"
+                        styleVariation="btn-slate-turquoise"
+                        variationType="button"/>
+                </flex_container_login_placeholder>
             </responsivegrid>
         </root>
     </jcr:content>

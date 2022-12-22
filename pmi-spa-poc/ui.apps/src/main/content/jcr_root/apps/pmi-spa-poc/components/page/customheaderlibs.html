@@ -27,9 +27,9 @@
 
 <!-- AEM page model -->
 <meta
-    property="cq:pagemodel_root_url"
-    data-sly-use.page="com.adobe.aem.spa.project.core.models.Page"
-    content="${page.hierarchyRootJsonExportUrl}"
+        property="cq:pagemodel_root_url"
+        data-sly-use.page="com.adobe.aem.spa.project.core.models.Page"
+        content="${page.hierarchyRootJsonExportUrl}"
 />
 
 <meta property="cq:datatype" data-sly-test="${wcmmode.edit || wcmmode.preview}" content="JSON" />
@@ -39,3 +39,12 @@
     There is currently no support for ContextHub in SPA projects:
     https://docs.adobe.com/content/help/en/experience-manager-64/developing/headless/spas/spa-overview.html#limitations
 */-->
+<div data-sly-use.domainHelper="domainHelper.js">
+    <link rel="prefetch" href = '${domainHelper.domainName}/content/dam/pmi-spa-poc/Login_Success.jpg'
+          onload="console.log('PMI-preload-performace-metric: prefetch-loaded for login success image',new Date().getTime())" crossorigin="anonymous" as="image"/>
+</div>
+
+<div data-sly-use.domainHelper="domainHelper.js">
+    <link rel="prefetch" href = '${domainHelper.domainName}/content/pmi-spa-poc/uk/en/login.html'
+          onload="console.log('PMI-preload-performace-metric: prefetch-success for login page',new Date().getTime())" crossorigin="anonymous" as="document"/>
+</div>

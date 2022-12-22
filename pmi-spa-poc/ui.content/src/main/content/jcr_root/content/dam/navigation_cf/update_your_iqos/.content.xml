@@ -2,15 +2,10 @@
 <jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:isCheckedOut="{Boolean}true"
     jcr:mixinTypes="[mix:referenceable,mix:versionable]"
-    jcr:primaryType="dam:Asset"
-    jcr:uuid="3812b1f4-80a7-412a-8dea-333813101f33">
+    jcr:primaryType="dam:Asset">
     <jcr:content
-        cq:lastModified="{Date}2022-10-20T18:42:09.751+02:00"
-        cq:lastModifiedBy="admin"
         cq:name="update_your_iqos"
         cq:parentPath="/content/dam/navigation_cf"
-        jcr:lastModified="{Date}2022-10-20T18:45:52.855+02:00"
-        jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent"
         jcr:title="Update Your IQOS"
         contentFragment="{Boolean}true"

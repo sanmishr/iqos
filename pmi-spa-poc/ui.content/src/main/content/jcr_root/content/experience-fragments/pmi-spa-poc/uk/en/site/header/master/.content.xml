@@ -2,8 +2,6 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-11-10T13:45:57.161+02:00"
-        cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/pmi-spa-poc/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -28,10 +26,6 @@
                 searchRoot="/content/pmi-spa-poc/uk"/>
             <logo/>
             <container
-                jcr:created="{Date}2022-10-31T16:17:11.476+02:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-10-31T16:17:11.476+02:00"
-                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="pmi-spa-poc/components/container">
                 <cq:responsive jcr:primaryType="nt:unstructured">

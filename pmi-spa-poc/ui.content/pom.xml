@@ -79,6 +79,18 @@
                     <failOnError>true</failOnError>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>com.cognifide.maven.plugins</groupId>
+                <artifactId>vltco-maven-plugin</artifactId>
+                <version>0.2.1</version>
+                <configuration>
+                    <uri>http://localhost:9506</uri>
+                    <user>admin</user>
+                    <password>admin</password>
+                    <localPath>src/main/content/jcr_root</localPath>
+                    <filter>src/main/content/META-INF/vault/filter.xml</filter>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 

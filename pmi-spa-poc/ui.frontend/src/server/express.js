@@ -20,7 +20,7 @@ import processSPA from "./aem-processor.functions";
 
 var exapp = express();
 //Here we are configuring express to use body-parser as middle-ware.
-exapp.use(bodyParser.urlencoded({ extended: false }));
+exapp.use(bodyParser.urlencoded({extended: false}));
 exapp.use(bodyParser.json());
 exapp.use(express.static("dist"));
 
