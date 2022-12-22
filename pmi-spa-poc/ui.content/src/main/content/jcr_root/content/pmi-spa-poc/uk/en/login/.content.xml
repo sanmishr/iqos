@@ -1,80 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-    jcr:primaryType="cq:Page">
+          jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-12-21T13:11:24.500+05:30"
-        cq:lastModifiedBy="admin"
-        cq:template="/conf/pmi-spa-poc/settings/wcm/templates/spa-page-template"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="Login"
-        sling:resourceType="pmi-spa-poc/components/page">
+            cq:template="/conf/pmi-spa-poc/settings/wcm/templates/spa-page-template"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Login"
+            sling:resourceType="pmi-spa-poc/components/page">
         <root
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/responsivegrid">
-            <responsivegrid
-                jcr:created="{Date}2018-10-22T16:48:57.968+05:30"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2018-10-22T16:49:29.168+05:30"
-                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <flex_container
-                    jcr:created="{Date}2022-12-16T08:39:40.006Z"
-                    jcr:createdBy="goszczyn@adobe.com"
-                    jcr:lastModified="{Date}2022-12-21T12:45:06.986+05:30"
-                    jcr:lastModifiedBy="admin"
+            <responsivegrid
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="pmi-spa-poc/components/flex-container"
-                    alignContent="flex-start"
-                    alignItems="flex-start"
-                    fileReference="/content/dam/pmi-spa-poc/Login_Background-20210803_v3.T1629181171499.V06_36_0_61.jpg"
-                    flexDirection="row"
-                    flexWrap="nowrap "
-                    justifyContent="flex-start"
-                    paddingLeft="none"
-                    paddingRight="none">
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                <flex_container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="pmi-spa-poc/components/flex-container"
+                        alignContent="flex-start"
+                        alignItems="flex-start"
+                        backgroundImageReference="/content/dam/pmi-spa-poc/Login_Background-20210803_v3.T1629181171499.V06_36_0_61.jpg"
+                        fileReference="/content/dam/pmi-spa-poc/Login_Background-20210803_v3.T1629181171499.V06_36_0_61.jpg"
+                        flexDirection="row"
+                        flexWrap="nowrap "
+                        justifyContent="flex-start"
+                        paddingLeft="none"
+                        paddingRight="none">
                     <image
-                        jcr:created="{Date}2022-12-16T08:39:46.958Z"
-                        jcr:createdBy="goszczyn@adobe.com"
-                        jcr:lastModified="{Date}2022-12-21T12:52:00.039+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="pmi-spa-poc/components/image"
-                        alt="alt txt"
-                        altValueFromDAM="false"
-                        displayPopupTitle="false"
-                        fileReference="/content/dam/pmi-spa-poc/icons-64-lock-light-theme.png"
-                        imageFromPageImage="false"
-                        isDecorative="true"
-                        linkTarget="_self"
-                        titleValueFromDAM="false"/>
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="pmi-spa-poc/components/image"
+                            alt="alt txt"
+                            altValueFromDAM="false"
+                            displayPopupTitle="false"
+                            fileReference="/content/dam/pmi-spa-poc/icons-64-lock-light-theme.png"
+                            imageFromPageImage="false"
+                            isDecorative="true"
+                            linkTarget="_self"
+                            titleValueFromDAM="false"/>
                     <text
-                        jcr:created="{Date}2022-12-16T08:39:53.231Z"
-                        jcr:createdBy="goszczyn@adobe.com"
-                        jcr:lastModified="{Date}2022-12-16T08:40:33.414Z"
-                        jcr:lastModifiedBy="goszczyn@adobe.com"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="pmi-spa-poc/components/text"
-                        text="&lt;p>Sign In&lt;/p>&#xd;&#xa;"
-                        textIsRich="true"/>
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="pmi-spa-poc/components/text"
+                            text="&lt;p>Sign In&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
                     <login
-                        jcr:created="{Date}2022-12-16T08:39:59.382Z"
-                        jcr:createdBy="goszczyn@adobe.com"
-                        jcr:lastModified="{Date}2022-12-16T08:40:41.662Z"
-                        jcr:lastModifiedBy="goszczyn@adobe.com"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="pmi-spa-poc/components/login"
-                        labelEmail="E-Mail"
-                        labelPassword="Password"
-                        labelPasswordForgotten="Password forgotten?"
-                        labelSubmitButton="Login"
-                        linkVariation="link-turquoise"
-                        marginBottom="0"
-                        marginEnd="0"
-                        marginStart="0"
-                        marginTop="0"
-                        styleVariation="btn-slate-turquoise"
-                        variationType="button"/>
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="pmi-spa-poc/components/login"
+                            labelEmail="E-Mail"
+                            labelPassword="Password"
+                            labelPasswordForgotten="Password forgotten?"
+                            labelSubmitButton="Login"
+                            linkVariation="link-turquoise"
+                            marginBottom="0"
+                            marginEnd="0"
+                            marginStart="0"
+                            marginTop="0"
+                            styleVariation="btn-slate-turquoise"
+                            variationType="button"/>
                 </flex_container>
             </responsivegrid>
         </root>
