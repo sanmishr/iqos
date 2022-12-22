@@ -10,6 +10,9 @@
     "start-ssr-ioruntime": "cross-env NODE_ENV=development aio app run --local",
     "start-ssr-express": "node dist/express.js",
     "deploy-ssr-ioruntime": "cross-env NODE_ENV=production aio app deploy",
+    "build-express-docker": "docker build -t pmi-ssr-express:latest .",
+    "start-ssr-express-docker": "docker run -d -p 3233:3233 --rm  --name pmi-ssr-express pmi-ssr-express",
+    "stop-ssr-express-docker": "docker kill pmi-ssr-express",
     "test": "",
     "eject": "react-scripts eject",
     "sync": "aemsync -d -w ../ui.apps/src/main/content"
