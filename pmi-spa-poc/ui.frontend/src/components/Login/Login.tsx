@@ -23,16 +23,16 @@ export default function Login(props: LoginProps): JSX.Element {
 
     useEffect(() => {
         // @FIXME -> This will not work with SSR. 'document' is not available on server side. POC only.
-        if (document && document.getElementsByClassName("wrapper")) {
-            document
-                .getElementsByClassName("wrapper")[0]
-                .parentElement?.parentElement?.classList.add("login-wrapper");
-            document
-                .getElementsByClassName("wrapper")[0]
-                .parentElement?.parentElement?.parentElement?.classList.add(
-                "flex-login-container"
-            );
-        }
+        // if (document && document.getElementsByClassName("wrapper")) {
+        //     document
+        //         .getElementsByClassName("wrapper")[0]
+        //         .parentElement?.parentElement?.classList.add("login-wrapper");
+        //     document
+        //         .getElementsByClassName("wrapper")[0]
+        //         .parentElement?.parentElement?.parentElement?.classList.add(
+        //         "flex-login-container"
+        //     );
+        // }
     });
 
     // https://help.sap.com/docs/SAP_CUSTOMER_DATA_CLOUD/8b8d6fffe113457094a17701f63e3d6a/683844d3c4b54104b2201efffdf558e3.html
